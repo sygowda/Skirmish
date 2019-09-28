@@ -201,7 +201,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 360.028}
 --- !u!1 &1400775337
 GameObject:
@@ -317,7 +317,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1.42}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 5.203, y: 0, z: 0}
 --- !u!1 &1605213732
 GameObject:
@@ -330,7 +330,6 @@ GameObject:
   - component: {fileID: 1605213736}
   - component: {fileID: 1605213735}
   - component: {fileID: 1605213734}
-  - component: {fileID: 1605213733}
   m_Layer: 0
   m_Name: Chest2_2
   m_TagString: Untagged
@@ -338,19 +337,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1605213733
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1605213732}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5b15c9b759c584489221054e66cba4f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxSpeed: 10
 --- !u!50 &1605213734
 Rigidbody2D:
   serializedVersion: 4
@@ -433,7 +419,7 @@ Transform:
   m_LocalScale: {x: 2, y: 0.5, z: 1.42}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 5.203, y: 0, z: 0}
 --- !u!1 &1814922622
 GameObject:
@@ -536,7 +522,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 1.42}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1814922626
 MonoBehaviour:
@@ -562,7 +548,6 @@ GameObject:
   - component: {fileID: 1846190894}
   - component: {fileID: 1846190893}
   - component: {fileID: 1846190892}
-  - component: {fileID: 1846190891}
   m_Layer: 0
   m_Name: Chest1_2
   m_TagString: Untagged
@@ -570,19 +555,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1846190891
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1846190890}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5b15c9b759c584489221054e66cba4f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxSpeed: 10
 --- !u!50 &1846190892
 Rigidbody2D:
   serializedVersion: 4
@@ -665,7 +637,7 @@ Transform:
   m_LocalScale: {x: 2, y: 0.5, z: 1.42}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 5.203, y: 0, z: 0}
 --- !u!1 &1865864692
 GameObject:
@@ -678,7 +650,6 @@ GameObject:
   - component: {fileID: 1865864696}
   - component: {fileID: 1865864695}
   - component: {fileID: 1865864694}
-  - component: {fileID: 1865864693}
   m_Layer: 0
   m_Name: Chest2_1
   m_TagString: Untagged
@@ -686,19 +657,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1865864693
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1865864692}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5b15c9b759c584489221054e66cba4f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxSpeed: 10
 --- !u!50 &1865864694
 Rigidbody2D:
   serializedVersion: 4
@@ -781,8 +739,51 @@ Transform:
   m_LocalScale: {x: 2, y: 0.5, z: 1.42}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 5.203, y: 0, z: 0}
+--- !u!1 &2043411954
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2043411956}
+  - component: {fileID: 2043411955}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: GameController
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2043411955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043411954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7aa4dc03793a4cc4abfe36ab4e2b41cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &2043411956
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043411954}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.8350667, y: -0.27804047, z: -0.3608949}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2118774945
 GameObject:
   m_ObjectHideFlags: 0
@@ -794,7 +795,6 @@ GameObject:
   - component: {fileID: 2118774949}
   - component: {fileID: 2118774948}
   - component: {fileID: 2118774947}
-  - component: {fileID: 2118774946}
   m_Layer: 0
   m_Name: Chest1_1
   m_TagString: Untagged
@@ -802,19 +802,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2118774946
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2118774945}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5b15c9b759c584489221054e66cba4f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxSpeed: 10
 --- !u!50 &2118774947
 Rigidbody2D:
   serializedVersion: 4
@@ -897,5 +884,5 @@ Transform:
   m_LocalScale: {x: 2, y: 0.5, z: 1.42}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 5.203, y: 0, z: 0}
