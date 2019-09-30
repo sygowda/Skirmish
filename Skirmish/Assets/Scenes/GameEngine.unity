@@ -270,6 +270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05480df20319b374790281eeb81d889b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weight: 0
 --- !u!1 &501644961
 GameObject:
   m_ObjectHideFlags: 0
@@ -390,6 +391,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05480df20319b374790281eeb81d889b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weight: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -487,7 +489,7 @@ GameObject:
   - component: {fileID: 1400775338}
   m_Layer: 0
   m_Name: Player1
-  m_TagString: Untagged
+  m_TagString: PlayerTag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -709,6 +711,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05480df20319b374790281eeb81d889b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weight: 0
 --- !u!1 &1535654692
 GameObject:
   m_ObjectHideFlags: 0
@@ -829,6 +832,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05480df20319b374790281eeb81d889b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weight: 0
 --- !u!1 &1605213732
 GameObject:
   m_ObjectHideFlags: 0
@@ -1051,6 +1055,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05480df20319b374790281eeb81d889b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weight: 0
 --- !u!1 &1814922622
 GameObject:
   m_ObjectHideFlags: 0
@@ -1066,7 +1071,7 @@ GameObject:
   - component: {fileID: 1814922627}
   m_Layer: 0
   m_Name: Player2
-  m_TagString: Untagged
+  m_TagString: PlayerTag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

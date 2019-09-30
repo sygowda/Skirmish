@@ -23,4 +23,9 @@ public class Bullet : MonoBehaviour
         //Debug.Log(collision.name);
         Destroy(gameObject);
     }
+
+    private void OnBecameInvisible()
+    {
+        Destroy(gameObject);
+    }
 }

@@ -10,7 +10,7 @@ public class Brick : MonoBehaviour
     void Start()
     {
         System.Random rand = new System.Random();
-        weight = rand.Next(10, 100);
+        weight = rand.Next(10, 50);
     }
 
     // Update is called once per frame
