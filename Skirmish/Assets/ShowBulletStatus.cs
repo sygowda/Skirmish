@@ -12,7 +12,7 @@ public class ShowBulletStatus : MonoBehaviour
     void Start()
     {
         player = GameObject.Find("Player1").GetComponent<Weapon>();
-        display = this.GetComponent<Text>();
+        display = GameObject.Find("BulletText").GetComponent<Text>();
         cd = GameObject.Find("CDText").GetComponent<Text>();
 
     }
@@ -20,7 +20,7 @@ public class ShowBulletStatus : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        display.text = player.cur_shots.ToString();
+        display.text = "Bullet: "+player.cur_shots.ToString();
         if (player.cur_shots == 0)
             cd.text = "cd: " + System.Math.Round((player.nextActionTime- Time.time),2).ToString();
         else
