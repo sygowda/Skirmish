@@ -40,8 +40,8 @@ public class GameController : MonoBehaviour
     {
         GameObject[] chestsForPlayer1 = GameObject.FindGameObjectsWithTag("PlayerOneChestTag");
         GameObject[] chestsForPlayer2 = GameObject.FindGameObjectsWithTag("PlayerTwoChestTag");
-        if(chestsForPlayer1.Length == 0 && chestsForPlayer2.Length > 0) return PLAYER_2;
-        if (chestsForPlayer2.Length == 0 && chestsForPlayer1.Length > 0) return PLAYER_1;
+        if(chestsForPlayer1.Length == 0 && chestsForPlayer2.Length > 0) return PLAYER_1;
+        if (chestsForPlayer2.Length == 0 && chestsForPlayer1.Length > 0) return PLAYER_2;
         if (chestsForPlayer2.Length == 0 && chestsForPlayer1.Length == 0) return DRAW;
         return -1;
     }
