@@ -870,7 +870,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 56.3, y: -50}
+  m_AnchoredPosition: {x: 56.30005, y: -50}
   m_SizeDelta: {x: 65.1, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1101451572
@@ -1035,8 +1035,8 @@ GameObject:
   - component: {fileID: 1400775340}
   - component: {fileID: 1400775339}
   - component: {fileID: 1400775338}
-  - component: {fileID: 1400775343}
   - component: {fileID: 1400775342}
+  - component: {fileID: 1400775343}
   m_Layer: 0
   m_Name: Player1
   m_TagString: Player1Tag
@@ -1177,15 +1177,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1400775337}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d195c5e524d3b485ab6ce76ea79219b2, type: 3}
+  m_Script: {fileID: 11500000, guid: 9d38fd1f9f2ad4e62a54da4bd336768d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firePoint: {fileID: 1757476222}
-  bulletPrefab: {fileID: 5345782125606456440, guid: b3093ff8ebe7544bbbdbb1a9a57c0772,
+  p1_firePoint: {fileID: 1757476222}
+  p1_bulletPrefab: {fileID: 5345782125606456440, guid: b3093ff8ebe7544bbbdbb1a9a57c0772,
     type: 3}
-  period: 0.2
-  max_shots: 10
-  cd_time: 2
+  p1_nextActionTime: 0
+  p1_period: 0.2
+  p1_max_shots: 10
+  p1_cur_shots: 0
+  p1_cd_time: 2
 --- !u!1 &1578754265
 GameObject:
   m_ObjectHideFlags: 0
@@ -1409,6 +1411,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8ead1e0c8b9e434895fcf3647a711e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 0
 --- !u!1 &1757476221
 GameObject:
   m_ObjectHideFlags: 0
@@ -1575,8 +1578,10 @@ MonoBehaviour:
   firePoint: {fileID: 93783442}
   bulletPrefab: {fileID: 5345782125606456440, guid: b3093ff8ebe7544bbbdbb1a9a57c0772,
     type: 3}
+  nextActionTime: 0
   period: 0.2
   max_shots: 10
+  cur_shots: 0
   cd_time: 2
 --- !u!61 &1814922628
 BoxCollider2D:
@@ -1761,6 +1766,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8ead1e0c8b9e434895fcf3647a711e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 0
 --- !u!1 &1865864692
 GameObject:
   m_ObjectHideFlags: 0
@@ -1918,6 +1924,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8ead1e0c8b9e434895fcf3647a711e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 0
 --- !u!1 &2043411954
 GameObject:
   m_ObjectHideFlags: 0
@@ -2118,3 +2125,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8ead1e0c8b9e434895fcf3647a711e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 0
