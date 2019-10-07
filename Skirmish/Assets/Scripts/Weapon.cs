@@ -20,7 +20,7 @@ public class Weapon : MonoBehaviour
         //{
         // Shoot();
         //}
-        if (Time.time > nextActionTime)
+        if (Time.time > nextActionTime && Camera.main.ScreenToWorldPoint(Input.mousePosition).y < -2.5f)
         {
             if (cur_shots == 0)
             {

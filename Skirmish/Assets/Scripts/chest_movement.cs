@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class chest_movement : MonoBehaviour
 {
-    public float x_speed = 3f;
+    public float x_speed = 1.5f;
     public bool outsideBounds = false;
 
     // Start is called before the first frame update
