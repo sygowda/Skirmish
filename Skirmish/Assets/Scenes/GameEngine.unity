@@ -463,7 +463,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b352501bc1a46a0419315ab00c29fb38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  remainingTime: 10
+  remainingTime: 20
   gameTimer: {fileID: 732820164}
 --- !u!114 &353117842
 MonoBehaviour:
@@ -1184,6 +1184,8 @@ MonoBehaviour:
   bulletPrefab: {fileID: 5345782125606456440, guid: b3093ff8ebe7544bbbdbb1a9a57c0772,
     type: 3}
   period: 0.2
+  max_shots: 10
+  cd_time: 2
 --- !u!1 &1578754265
 GameObject:
   m_ObjectHideFlags: 0
@@ -1574,6 +1576,8 @@ MonoBehaviour:
   bulletPrefab: {fileID: 5345782125606456440, guid: b3093ff8ebe7544bbbdbb1a9a57c0772,
     type: 3}
   period: 0.2
+  max_shots: 10
+  cd_time: 2
 --- !u!61 &1814922628
 BoxCollider2D:
   m_ObjectHideFlags: 0
