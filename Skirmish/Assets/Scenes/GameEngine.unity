@@ -1158,7 +1158,7 @@ MonoBehaviour:
   firePoint: {fileID: 1757476222}
   bulletPrefab: {fileID: 5345782125606456440, guid: b3093ff8ebe7544bbbdbb1a9a57c0772,
     type: 3}
-  period: 0.1
+  period: 0.2
 --- !u!1 &1435178246
 GameObject:
   m_ObjectHideFlags: 0
@@ -1910,7 +1910,7 @@ MonoBehaviour:
   firePoint: {fileID: 93783442}
   bulletPrefab: {fileID: 5345782125606456440, guid: b3093ff8ebe7544bbbdbb1a9a57c0772,
     type: 3}
-  period: 0.1
+  period: 0.2
 --- !u!1 &1846190890
 GameObject:
   m_ObjectHideFlags: 0
