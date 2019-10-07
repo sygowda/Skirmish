@@ -5,10 +5,14 @@ using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
+    private const int PLAYER_1 = 1;
+    private const int PLAYER_2 = 2;
+    private const int DRAW = 0;
     public static GameController instance;
-    public GameObject gameOverText;
+    public GameObject drawText;
+    public Text player1Text;
+    public Text player2Text;
     public bool gameOver = false;
-    // Start is called before the first frame update
 
     void Awake()
     {
@@ -21,30 +25,46 @@ public class GameController : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
     {
-        if(AllChestsDestroyed())
+        int playerWon = AllChestsDestroyed();
+        if (playerWon >= 0)
             {
-                GameOver();
+                GameOver(playerWon);
             }
     }
 
-    private bool AllChestsDestroyed()
+    public int AllChestsDestroyed()
     {
         GameObject[] chestsForPlayer1 = GameObject.FindGameObjectsWithTag("PlayerOneChestTag");
         GameObject[] chestsForPlayer2 = GameObject.FindGameObjectsWithTag("PlayerTwoChestTag");
-        return chestsForPlayer1.Length == 0 || chestsForPlayer2.Length == 0;
+        if(chestsForPlayer1.Length == 0 && chestsForPlayer2.Length > 0) return PLAYER_2;
+        if (chestsForPlayer2.Length == 0 && chestsForPlayer1.Length > 0) return PLAYER_1;
+        if (chestsForPlayer2.Length == 0 && chestsForPlayer1.Length == 0) return DRAW;
+        return -1;
     }
 
-    public void GameOver()
+    public void GameOver(int player)
     {
         gameOver = true;
-        gameOverText.SetActive(true);
+
+        if(player == PLAYER_1)
+        {
+            player1Text.text = ("You WIN!");
+            player2Text.text = ("You LOSE!"); 
+        }
+        else if (player == PLAYER_2)
+        {
+            player2Text.text = ("You WIN!");
+            player1Text.text = ("You LOSE!");
+        }
+        else
+        {
+            drawText.SetActive(true);
+        }
+        player1Text.gameObject.SetActive(true);
+        player2Text.gameObject.SetActive(true);
     }
 }
