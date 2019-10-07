@@ -10,7 +10,7 @@ public class Weapon : MonoBehaviour
     private float nextActionTime = 0.0f;
     public float period = 0.1f;
     public int max_shots = 10;
-    private int cur_shots;
+    public int cur_shots;
     public float cd_time = 2;
 
     // Update is called once per frame
