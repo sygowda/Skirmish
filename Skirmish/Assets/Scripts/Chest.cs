@@ -5,9 +5,10 @@ using UnityEngine;
 public class Chest : MonoBehaviour
 {
     // Start is called before the first frame update
+    public int health;
     void Start()
     {
-        
+        health = 5;
     }
 
     // Update is called once per frame
@@ -20,7 +21,16 @@ public class Chest : MonoBehaviour
     {
         if(collision.tag == "BulletTag")
         {
-            Destroy(gameObject);
+            Debug.Log(health);
+            if (health > 0)
+            {
+                health--;
+                Debug.Log(health);
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }
