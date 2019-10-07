@@ -13,6 +13,14 @@ public class Bullet : MonoBehaviour
         rb.velocity = transform.right * speed;
     }
 
+    private void Update()
+    {
+        if(GameController.instance.gameOver == true)
+        {
+            Destroy(gameObject);
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Brick brick = collision.GetComponent<Brick>();

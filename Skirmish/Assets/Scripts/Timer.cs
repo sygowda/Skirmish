@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
-    public int remainingTime = 30; //Total seconds
+    public int remainingTime = 10; //Total seconds
     public Text gameTimer;
 
     // Start is called before the first frame update
@@ -23,7 +23,7 @@ public class Timer : MonoBehaviour
         if(remainingTime <= 0)
         {
             StopCoroutine("LoseTime");
-            Application.Quit();
+            GameController.instance.GameOver();
         }
     }
 
