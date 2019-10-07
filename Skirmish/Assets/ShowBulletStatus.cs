@@ -22,7 +22,7 @@ public class ShowBulletStatus : MonoBehaviour
     {
         display.text = player.cur_shots.ToString();
         if (player.cur_shots == 0)
-            cd.text = "cool down";
+            cd.text = "cd: " + System.Math.Round((player.nextActionTime- Time.time),2).ToString();
         else
             cd.text = "";
           
