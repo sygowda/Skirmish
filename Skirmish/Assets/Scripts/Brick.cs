@@ -1,20 +1,23 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Brick : MonoBehaviour
 {
     public int weight = 0;
-    private Color high = Color.red, low = Color.green, mediumPlus = Color.blue, medium = Color.cyan;
+    private Color highPlus = new Color(0f, 0f, 0f);
+    private Color high = new Color(0.5f, 0.08f, 0f);
+    private Color mediumPlus = new Color(0.6603774f, 0.2013205f, 0.1214845f);
+    private Color medium = new Color(0.8679245f, 0.3749432f, 0.2906728f);
+    private Color lowPlus = new Color(0.8018868f, 0.6571488f, 0.631675f);
+    private Color low = new Color(1f,1f,1f);
     Color currentColor;
     Renderer renderer;
 
 
     void Awake()
     {
-        System.Random rand = new System.Random();
-        weight = rand.Next(10, 40);
+        weight = Random.Range(5, 40);
         renderer = GetComponent<Renderer>();
         SetColor();
         renderer.material.color = currentColor;
@@ -60,17 +63,25 @@ public class Brick : MonoBehaviour
     {
         if (weight >= 35)
         {
+            currentColor = highPlus;
+        }
+        else if(weight < 35 && weight >= 25)
+        {
             currentColor = high;
         }
-        else if (weight >= 25)
+        else if (weight < 25 && weight >= 20)
         {
             currentColor = mediumPlus;
         }
-        else if (weight >= 15)
+        else if (weight < 20 && weight >= 15)
         {
             currentColor = medium;
         }
-        else
+        else if (weight < 15 && weight >= 10)
+        {
+            currentColor = lowPlus;
+        }
+        else if (weight < 10)
         {
             currentColor = low;
         }
@@ -79,6 +90,6 @@ public class Brick : MonoBehaviour
     private void ChangeColor()
     {
         SetColor();
-        renderer.material.color = Color.Lerp(renderer.material.color, currentColor, 0.2f);
+        renderer.material.color = Color.Lerp(renderer.material.color, currentColor, 0.1f);
     }
 }
