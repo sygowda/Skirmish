@@ -399,7 +399,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cf1db25ba2beb6f45af1c6efd57944cc, type: 3}
-  m_Color: {r: 0.40392157, g: 0.20784314, b: 0.101960786, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -580,7 +580,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cf1db25ba2beb6f45af1c6efd57944cc, type: 3}
-  m_Color: {r: 0.4056604, g: 0.20645216, b: 0.1014151, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -794,7 +794,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 00
+  m_Text: 0
 --- !u!222 &732820165
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1310,7 +1310,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cf1db25ba2beb6f45af1c6efd57944cc, type: 3}
-  m_Color: {r: 0.4509804, g: 0.23529412, b: 0.12156863, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1431,7 +1431,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cf1db25ba2beb6f45af1c6efd57944cc, type: 3}
-  m_Color: {r: 0.5188679, g: 0.26086164, b: 0.12482198, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1576,7 +1576,7 @@ GameObject:
   - component: {fileID: 1605213738}
   m_Layer: 0
   m_Name: Chest2_2
-  m_TagString: ChestTag
+  m_TagString: PlayerTwoChestTag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1775,7 +1775,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cf1db25ba2beb6f45af1c6efd57944cc, type: 3}
-  m_Color: {r: 0.4528302, g: 0.23459174, b: 0.12175151, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2020,7 +2020,7 @@ GameObject:
   - component: {fileID: 1846190896}
   m_Layer: 0
   m_Name: Chest1_2
-  m_TagString: ChestTag
+  m_TagString: PlayerOneChestTag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2177,7 +2177,7 @@ GameObject:
   - component: {fileID: 1865864698}
   m_Layer: 0
   m_Name: Chest2_1
-  m_TagString: ChestTag
+  m_TagString: PlayerTwoChestTag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2377,7 +2377,7 @@ GameObject:
   - component: {fileID: 2118774951}
   m_Layer: 0
   m_Name: Chest1_1
-  m_TagString: ChestTag
+  m_TagString: PlayerOneChestTag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

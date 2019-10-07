@@ -8,6 +8,8 @@ TagManager:
   - ChestTag
   - PlayerTag
   - BulletTag
+  - PlayerOneChestTag
+  - PlayerTwoChestTag
   layers:
   - Default
   - TransparentFX

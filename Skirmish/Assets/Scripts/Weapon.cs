@@ -8,7 +8,7 @@ public class Weapon : MonoBehaviour
     public GameObject bulletPrefab;
 
     private float nextActionTime = 0.0f;
-    public float period = 0.18f;
+    public float period = 0.1f;
 
     // Update is called once per frame
     void Update()

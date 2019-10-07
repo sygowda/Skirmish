@@ -20,9 +20,10 @@ public class Timer : MonoBehaviour
     {
         gameTimer.text = ("" + remainingTime); //Show the remaining time on the screen
 
-        if(remainingTime <= 0)
+        if(remainingTime <= 0 || GameController.instance.gameOver)
         {
             StopCoroutine("LoseTime");
+            gameTimer.text = ("0");
             GameController.instance.GameOver();
         }
     }
