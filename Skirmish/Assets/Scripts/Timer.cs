@@ -23,8 +23,7 @@ public class Timer : MonoBehaviour
         if(remainingTime <= 0 || GameController.instance.gameOver)
         {
             StopCoroutine("LoseTime");
-            int playerWon = GameController.instance.AllChestsDestroyed();
-            GameController.instance.GameOver(playerWon);
+            GameController.instance.GameOver();
         }
     }
 
