@@ -5,12 +5,13 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
-    public int remainingTime = 20; //Total seconds
+    public int remainingTime; //Total seconds
     public Text gameTimer;
 
     // Start is called before the first frame update
     void Start()
     {
+        remainingTime = 1;
         StartCoroutine("LoseTime");
         Time.timeScale = 1; //Make sure time passes at the same rate as real time
     }
@@ -32,7 +33,7 @@ public class Timer : MonoBehaviour
         while(true)
         {
             yield return new WaitForSeconds(1);
-            remainingTime--;
+            remainingTime++;
         }
     }
 }
