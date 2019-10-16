@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public static class UserData : MonoBehaviour
+public static class UserData
 {
-	private static string name;
-	private static int level, coin;
+	//private static string name;
+	//private static int level, coin;
 
 	public static string name
 	{

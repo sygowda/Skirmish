@@ -23,7 +23,7 @@ public class p1Mouse : MonoBehaviour
             if (point.x > 2.553f) { point.x = 2.553f; }
             if (point.x < -2.553f) { point.x = -2.553f; }
 
-            if (p1drag)
+            if ((p1cursorObject != null) && p1drag)
                 p1cursorObject.position = point;
             if (Input.GetMouseButtonDown(0))
                 p1drag = true;
