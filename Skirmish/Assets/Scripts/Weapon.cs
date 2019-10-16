@@ -16,11 +16,7 @@ public class Weapon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if (Input.GetButtonDown("Fire1"))
-        //{
-        // Shoot();
-        //}
-        if (Time.time > nextActionTime && Camera.main.ScreenToWorldPoint(Input.mousePosition).y < -2.5f)
+        if (Time.time > nextActionTime && Camera.main.ScreenToWorldPoint(Input.mousePosition).y < -2.5f && Input.GetKey(KeyCode.Mouse0))
         {
             if (cur_shots == 0)
             {
