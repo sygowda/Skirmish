@@ -7,18 +7,18 @@ public class Chest : MonoBehaviour
 {
     // Start is called before the first frame update
     public int health;
-    public GameObject text;
+    //public GameObject text;
     TextMeshPro tmp;
     void Start()
     {
         health = 5;
-        tmp = text.GetComponent<TextMeshPro>();
+        //tmp = text.GetComponent<TextMeshPro>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        tmp.text = health.ToString();
+        //tmp.text = health.ToString();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
