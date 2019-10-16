@@ -18,16 +18,18 @@ public class mouse : MonoBehaviour
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         Vector3 point = transform.position;
         point.x = ray.origin.x + (ray.direction.x * distance);
-        if (point.x > 2.553f) { point.x = 2.553f; }
-        if (point.x < -2.553f) { point.x = -2.553f;  }
+        if (Camera.main.ScreenToWorldPoint(Input.mousePosition).y < 0f)
+        {
+            if (point.x > 2.553f) { point.x = 2.553f; }
+            if (point.x < -2.553f) { point.x = -2.553f; }
 
-        if(drag)
-            cursorObject.position = point;
-        if (Input.GetMouseButtonDown(0))
-            drag = true;
-        if (Input.GetMouseButtonUp(0))
-            drag = false;
+            if (drag)
+                cursorObject.position = point;
+            if (Input.GetMouseButtonDown(0))
+                drag = true;
+            if (Input.GetMouseButtonUp(0))
+                drag = false;
 
-
+        }
     }
 }
