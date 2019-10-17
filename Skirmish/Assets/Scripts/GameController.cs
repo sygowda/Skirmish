@@ -51,13 +51,13 @@ public class GameController : MonoBehaviour
 
         if(player == PLAYER_1)
         {
-            player1Text.text = ("You WIN!");
-            player2Text.text = ("You LOSE!"); 
+            player1Text.text = ("You WIN 200 coins!");
+            player2Text.text = ("You LOSE 100 coins!"); 
         }
         else if (player == PLAYER_2)
         {
-            player2Text.text = ("You WIN!");
-            player1Text.text = ("You LOSE!");
+            player2Text.text = ("You WIN 200 coins!");
+            player1Text.text = ("You LOSE 100 coins!");
         }
         else
         {
