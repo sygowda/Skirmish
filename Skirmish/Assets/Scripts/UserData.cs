@@ -4,41 +4,37 @@ using UnityEngine;
 
 public static class UserData
 {
-	//private static string name;
-	//private static int level, coin;
+    //private static string name;
+    //private static int level, coin;
 
-	public static string name
-	{
-		get
-		{
-			return name;
-		}
-		set
-		{
-			name = value;
-		}
-	}
-	public static int level
-	{
-		get
-		{
-			return level;
-		}
-		set
-		{
-			level = value;
-		}
-	}
-	public static int coin
-	{
-		get
-		{
-			return coin;
-		}
-		set
-		{
-			coin = value;
-		}
-	}
+    private static string name;
+    private static int level, coin;
+
+    public static void initialize(string name_, int level_, int coin_)
+    {
+        name = name_;
+        level = level_;
+        coin = coin_;
+    }
+    public static string getName()
+    {
+        return name;
+    }
+    public static int getLevel()
+    {
+        return level;
+    }
+    public static int getCoin()
+    {
+        return coin;
+    }
+    public static void addCoin(int amount)//amount can be negative
+    {
+        coin += amount;
+        if (coin < 0)
+            coin = 0;
+        
+    }
+
 
 }
