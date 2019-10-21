@@ -12,7 +12,7 @@ public class button_plus : MonoBehaviour
 
     // Start is called before the first frame update
     public void Start()
-    {
+    { 
         remainingGO = GameObject.Find("Remaining").GetComponent<TextMeshProUGUI>();
         chestA = this.GetComponentInParent<TextMeshProUGUI>();
         confirmButton = this.transform.parent.parent.Find("Next").GetComponent<Button>();
@@ -33,6 +33,7 @@ public class button_plus : MonoBehaviour
             }
             int newChestA = int.Parse(chestA.text) + 10;
             chestA.text = newChestA.ToString();
+            UserData.setChest1_1(newChestA);
         }
     }
 
