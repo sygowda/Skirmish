@@ -13,6 +13,7 @@ public class GameController : MonoBehaviour
     public Text player1Text;
     public Text player2Text;
     public bool gameOver = false;
+    public GameObject endMenu;
 
     void Awake()
     {
@@ -62,6 +63,7 @@ public class GameController : MonoBehaviour
         else
         {
             drawText.SetActive(true);
+            endMenu.SetActive(true);
         }
 
         player1Text.gameObject.SetActive(true);
@@ -92,5 +94,6 @@ public class GameController : MonoBehaviour
 
         player1Text.gameObject.SetActive(true);
         player2Text.gameObject.SetActive(true);
+        endMenu.SetActive(true);
     }
 }
