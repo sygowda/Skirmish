@@ -37,7 +37,6 @@ public class MainMenu : MonoBehaviour
             // Pass the json to JsonUtility, and tell it to create a GameData object from it
             User loadedData = JsonUtility.FromJson<User>(dataAsJson);
             UserData.initialize(loadedData.name, loadedData.level, loadedData.coin);
-            Debug.LogError(UserData.getName());
         }
         else
         {
