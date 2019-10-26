@@ -33,6 +33,8 @@ public class p1Weapon : MonoBehaviour
             if (p1_cur_shots == 0)
             {
                 p1_cur_shots = p1_max_shots;
+                GameObject player1 = GameObject.FindGameObjectWithTag("Player1Tag");
+                player1.GetComponent<Renderer>().material.color = new Color(1f, 1f, 1f);
             }
             P1Shoot();
             p1_nextActionTime = p1_nextActionTime + p1_period;
@@ -40,6 +42,8 @@ public class p1Weapon : MonoBehaviour
             if (p1_cur_shots == 0)
             {
                 p1_nextActionTime = p1_nextActionTime + p1_cd_time;
+                GameObject player1 = GameObject.FindGameObjectWithTag("Player1Tag");
+                player1.GetComponent<Renderer>().material.color = new Color(0.5f, 0.5f, 0.5f);
             }
 
 

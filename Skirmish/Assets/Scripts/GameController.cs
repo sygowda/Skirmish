@@ -13,6 +13,7 @@ public class GameController : MonoBehaviour
     public Text player1Text;
     public Text player2Text;
     public bool gameOver = false;
+    public ArrayList availableBrickPositions;
 
     void Awake()
     {
@@ -24,6 +25,11 @@ public class GameController : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    void Start()
+    {
+        availableBrickPositions = new ArrayList();
     }
 
     // Update is called once per frame

@@ -21,6 +21,8 @@ public class Weapon : MonoBehaviour
             if (cur_shots == 0)
             {
                 cur_shots = max_shots;
+                GameObject player2 = GameObject.FindGameObjectWithTag("Player2Tag");
+                player2.GetComponent<Renderer>().material.color = new Color(1f, 1f, 1f);
             }
             Shoot();
             nextActionTime = nextActionTime + period;
@@ -28,6 +30,8 @@ public class Weapon : MonoBehaviour
             if (cur_shots == 0)
             {
                 nextActionTime = nextActionTime + cd_time;
+                GameObject player2 = GameObject.FindGameObjectWithTag("Player2Tag");
+                player2.GetComponent<Renderer>().material.color = new Color(0.5f, 0.5f, 0.5f);
             }
             
                 

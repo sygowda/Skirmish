@@ -43,7 +43,7 @@ public class Brick : MonoBehaviour
         renderer.material.color = Color.Lerp(renderer.material.color, currentColor, 0.1f);*/
     }
 
-    public void TakeDamage( int damage)
+    public void TakeDamage(int damage)
     {
         weight -= damage;
         if(weight <= 0)
@@ -55,6 +55,9 @@ public class Brick : MonoBehaviour
 
     private void Break()
     {
+        Vector2 p = this.transform.position;
+        print(p);
+        GameController.instance.availableBrickPositions.Add(p);
         Destroy(gameObject);
     }
 
