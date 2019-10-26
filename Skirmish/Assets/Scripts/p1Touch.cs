@@ -7,7 +7,7 @@ public class p1Touch : MonoBehaviour
     public Transform p1cursorObject;
     public float p1distance = 1.5f;
     public bool p1drag = false;
-    public Touch p1_touch;
+    public static Touch p1_touch;
     void Start()
     {
 
@@ -27,19 +27,19 @@ public class p1Touch : MonoBehaviour
         point.x = ray.origin.x + (ray.direction.x * p1distance);
         //if (Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position).y > 0f)
         //{
-            if (point.x > 2.553f) { point.x = 2.553f; }
-            if (point.x < -2.553f) { point.x = -2.553f; }
+        if (point.x > 2.553f) { point.x = 2.553f; }
+        if (point.x < -2.553f) { point.x = -2.553f; }
 
-            if ((p1cursorObject != null) && p1drag)
-                p1cursorObject.position = point;
+        if (p1_touch.phase == TouchPhase.Moved)
+                p1cursorObject.position = p1_touch.position;
 
-            if (p1_touch.phase == TouchPhase.Ended || p1_touch.phase == TouchPhase.Canceled)
-            {
-                p1drag = false;
-            } else
-            {
-                p1drag = true;
-            }                
+            //if (p1_touch.phase == TouchPhase.Ended || p1_touch.phase == TouchPhase.Canceled)
+            //{
+            //    p1drag = false;
+            //} else
+            //{
+            //    p1drag = true;
+            //}                
         //}
     }
 }

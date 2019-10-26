@@ -34,17 +34,17 @@ public class p2Touch : MonoBehaviour
             if (point.x > 2.553f) { point.x = 2.553f; }
             if (point.x < -2.553f) { point.x = -2.553f; }
 
-            if (drag)
+            if (p2_touch.phase == TouchPhase.Moved)
                 cursorObject.position = point;
 
-            if (p2_touch.phase == TouchPhase.Ended || p2_touch.phase == TouchPhase.Canceled)
-            {
-                drag = false;
-            }
-            else
-            {
-                drag = true;
-            }
+            //if (p2_touch.phase == TouchPhase.Ended || p2_touch.phase == TouchPhase.Canceled)
+            //{
+            //    drag = false;
+            //}
+            //else
+            //{
+            //    drag = true;
+            //}
 
         //}
     }
