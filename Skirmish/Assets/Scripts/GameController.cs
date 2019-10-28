@@ -89,13 +89,38 @@ public class GameController : MonoBehaviour
         }
         else if (chestsForPlayer1.Length > chestsForPlayer2.Length)
         {
-            player1Text.text = ("You WIN!");
-            player2Text.text = ("You LOSE!");
+            int score = 200;
+
+            for (int i = 0; i < chestsForPlayer2.Length; i++)
+            {
+                if (chestsForPlayer2[i].GetComponent<CoinTrack2_1>() != null) {
+                    score -= chestsForPlayer2[i].GetComponent<CoinTrack2_1>().coin;
+                }
+                if (chestsForPlayer2[i].GetComponent<CoinTrack2_2>() != null)
+                {
+                    score -= chestsForPlayer2[i].GetComponent<CoinTrack2_2>().coin;
+                }
+            }
+            player1Text.text = ("You WIN" + score + "coins!");
+            player2Text.text = ("You LOSE" + (200 - score) + "coins!");
         }
         else
         {
-            player2Text.text = ("You WIN!");
-            player1Text.text = ("You LOSE!");
+            int score = 200;
+
+            for (int i = 0; i < chestsForPlayer1.Length; i++)
+            {
+                if (chestsForPlayer1[i].GetComponent<CoinTrack1_1>() != null)
+                {
+                    score -= chestsForPlayer1[i].GetComponent<CoinTrack1_1>().coin;
+                }
+                if (chestsForPlayer1[i].GetComponent<CoinTrack1_2>() != null)
+                {
+                    score -= chestsForPlayer1[i].GetComponent<CoinTrack1_2>().coin;
+                }
+            }
+            player2Text.text = ("You WIN!" + score + "coins!");
+            player1Text.text = ("You LOSE" + (200 - score) + "coins!");
         }
 
         player1Text.gameObject.SetActive(true);
