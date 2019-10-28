@@ -16,7 +16,7 @@ public class Weapon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Time.time > nextActionTime && p1Touch.p1_touch.phase != TouchPhase.Canceled && p2Touch.p2_touch.phase != TouchPhase.Ended && Camera.main.ScreenToWorldPoint(p2Touch.p2_touch.position).y > 2.5f)
+        if (Time.time > nextActionTime && Camera.main.ScreenToWorldPoint(Input.mousePosition).y < -2.5f && Input.GetKey(KeyCode.Mouse0))
         {
             if (cur_shots == 0)
             {
