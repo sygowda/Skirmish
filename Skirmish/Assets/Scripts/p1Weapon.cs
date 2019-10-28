@@ -28,7 +28,7 @@ public class p1Weapon : MonoBehaviour
         //{
         // Shoot();
         //}
-        if (Time.time > p1_nextActionTime && p1Touch.p1_touch.phase != TouchPhase.Canceled && p1Touch.p1_touch.phase != TouchPhase.Ended && Camera.main.ScreenToWorldPoint(p1Touch.p1_touch.position).y > 2.5f)
+        if (Time.time > p1_nextActionTime && Input.GetKey(KeyCode.Mouse0) && Camera.main.ScreenToWorldPoint(Input.mousePosition).y > 2.5f)
         {
             if (p1_cur_shots == 0)
             {
