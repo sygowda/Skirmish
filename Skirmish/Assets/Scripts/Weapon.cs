@@ -16,25 +16,30 @@ public class Weapon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Time.time > nextActionTime && Camera.main.ScreenToWorldPoint(Input.mousePosition).y < -2.5f && Input.GetKey(KeyCode.Mouse0))
+        GameObject player2 = GameObject.FindGameObjectWithTag("Player2Tag");
+        if (Time.time > nextActionTime)
         {
-            if (cur_shots == 0)
+            player2.GetComponent<Renderer>().material.color = new Color(1f, 1f, 1f);
+            if (Camera.main.ScreenToWorldPoint(Input.mousePosition).y < -2.5f && Input.GetKey(KeyCode.Mouse0))
             {
-                cur_shots = max_shots;
-                GameObject player2 = GameObject.FindGameObjectWithTag("Player2Tag");
-                player2.GetComponent<Renderer>().material.color = new Color(1f, 1f, 1f);
+                if (cur_shots == 0)
+                {
+                    cur_shots = max_shots;
+                    
+
+                }
+                Shoot();
+                nextActionTime = nextActionTime + period;
+                cur_shots--;
+                if (cur_shots == 0)
+                {
+                    nextActionTime = nextActionTime + cd_time;
+                    
+                    player2.GetComponent<Renderer>().material.color = new Color(0.5f, 0.5f, 0.5f);
+                }
+
+
             }
-            Shoot();
-            nextActionTime = nextActionTime + period;
-            cur_shots--;
-            if (cur_shots == 0)
-            {
-                nextActionTime = nextActionTime + cd_time;
-                GameObject player2 = GameObject.FindGameObjectWithTag("Player2Tag");
-                player2.GetComponent<Renderer>().material.color = new Color(0.5f, 0.5f, 0.5f);
-            }
-            
-                
         }
     }
 
