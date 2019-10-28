@@ -30,8 +30,13 @@ public class p1Touch : MonoBehaviour
         if (point.x > 2.553f) { point.x = 2.553f; }
         if (point.x < -2.553f) { point.x = -2.553f; }
 
+        if (p1_touch.phase == TouchPhase.Began)
+        {
+            p1cursorObject.position = new Vector3 (p1_touch.position.x, p1cursorObject.position.y, p1cursorObject.position.z);
+        }
+
         if (p1_touch.phase == TouchPhase.Moved)
-                p1cursorObject.position = p1_touch.position;
+            p1cursorObject.Translate(p1_touch.deltaPosition.x * p1_touch.deltaTime, 0, 0);
 
             //if (p1_touch.phase == TouchPhase.Ended || p1_touch.phase == TouchPhase.Canceled)
             //{
@@ -41,6 +46,10 @@ public class p1Touch : MonoBehaviour
             //    p1drag = true;
             //}                
         //}
+        if (p1_touch.phase == TouchPhase.Ended)
+        {
+            p1cursorObject.Translate(0, 0, 0);
+        }
     }
 }
 
