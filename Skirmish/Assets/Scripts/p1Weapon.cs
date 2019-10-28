@@ -28,25 +28,30 @@ public class p1Weapon : MonoBehaviour
         //{
         // Shoot();
         //}
-        if (Time.time > p1_nextActionTime && p1Touch.p1_touch.phase != TouchPhase.Ended && Camera.main.ScreenToWorldPoint(p1Touch.p1_touch.position).y > 2.5f)
+        GameObject player1 = GameObject.FindGameObjectWithTag("Player1Tag");
+        if (Time.time > p1_nextActionTime)
         {
-            if (p1_cur_shots == 0)
+
+            player1.GetComponent<Renderer>().material.color = new Color(1f, 1f, 1f);
+            if ( p1Touch.p1_touch.phase != TouchPhase.Ended && Camera.main.ScreenToWorldPoint(p1Touch.p1_touch.position).y > 2.5f)
             {
-                p1_cur_shots = p1_max_shots;
-                GameObject player1 = GameObject.FindGameObjectWithTag("Player1Tag");
-                player1.GetComponent<Renderer>().material.color = new Color(1f, 1f, 1f);
-            }
-            P1Shoot();
-            p1_nextActionTime = p1_nextActionTime + p1_period;
-            p1_cur_shots--;
-            if (p1_cur_shots == 0)
-            {
-                p1_nextActionTime = p1_nextActionTime + p1_cd_time;
-                GameObject player1 = GameObject.FindGameObjectWithTag("Player1Tag");
-                player1.GetComponent<Renderer>().material.color = new Color(0.5f, 0.5f, 0.5f);
-            }
+                if (p1_cur_shots == 0)
+                {
+                    p1_cur_shots = p1_max_shots;
+                    
+                    
+                }
+                P1Shoot();
+                p1_nextActionTime = p1_nextActionTime + p1_period;
+                p1_cur_shots--;
+                if (p1_cur_shots == 0)
+                {
+                    p1_nextActionTime = p1_nextActionTime + p1_cd_time;
+                    player1.GetComponent<Renderer>().material.color = new Color(0.5f, 0.5f, 0.5f);
+                }
 
 
+            }
         }
     }
 
