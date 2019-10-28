@@ -20,7 +20,7 @@ public class Weapon : MonoBehaviour
         if (Time.time > nextActionTime)
         {
             player2.GetComponent<Renderer>().material.color = new Color(1f, 1f, 1f);
-            if (Camera.main.ScreenToWorldPoint(Input.mousePosition).y < -2.5f && Input.GetKey(KeyCode.Mouse0))
+            if (p2Touch.p2_touch.phase != TouchPhase.Ended && Camera.main.ScreenToWorldPoint(p2Touch.p2_touch.position).y < -2.5f)
             {
                 if (cur_shots == 0)
                 {
