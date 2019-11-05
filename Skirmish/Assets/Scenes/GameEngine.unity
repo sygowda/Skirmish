@@ -577,11 +577,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '-----------------------------------------------------------------------------------------------------------------------------
-
-
-
-    Fire Zone'
+  m_Text: 
 --- !u!222 &112722147
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -768,7 +764,6 @@ MonoBehaviour:
   player2Text: {fileID: 13822680}
   gameOver: 0
   endMenu: {fileID: 663582260}
-  isStart: 0
   startCountDown: {fileID: 1473184507}
   startGame: 0
 --- !u!114 &353117843
@@ -1030,7 +1025,7 @@ RectTransform:
   - {fileID: 1971497719}
   - {fileID: 1582884566}
   m_Father: {fileID: 892353205}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1454,10 +1449,10 @@ RectTransform:
   - {fileID: 753879939}
   - {fileID: 13822679}
   - {fileID: 112722145}
+  - {fileID: 1473184506}
   - {fileID: 1881516195}
   - {fileID: 2034820887}
   - {fileID: 663582261}
-  - {fileID: 1473184506}
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: -0.268, z: 0}
@@ -2215,14 +2210,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d38fd1f9f2ad4e62a54da4bd336768d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firePoint: {fileID: 1757476222}
-  bulletPrefab: {fileID: 5345782125606456440, guid: b3093ff8ebe7544bbbdbb1a9a57c0772,
-    type: 3}
-  nextActionTime: 0
-  period: 0.2
-  max_shots: 10
-  cur_shots: 0
-  cd_time: 2
 --- !u!114 &1400775345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2644,7 +2631,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 892353205}
-  m_RootOrder: 8
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2679,8 +2666,8 @@ MonoBehaviour:
     m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: 
 --- !u!222 &1473184508
@@ -4272,7 +4259,7 @@ RectTransform:
   - {fileID: 856773271}
   - {fileID: 501098794}
   m_Father: {fileID: 892353205}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -4631,7 +4618,7 @@ RectTransform:
   m_Children:
   - {fileID: 1969418196}
   m_Father: {fileID: 892353205}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
