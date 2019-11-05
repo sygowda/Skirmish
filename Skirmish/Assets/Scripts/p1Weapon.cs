@@ -2,59 +2,50 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class p1Weapon : MonoBehaviour
+public class P1Weapon : MonoBehaviour
 {
-    public Transform p1_firePoint;
-    public GameObject p1_bulletPrefab;
+    public Transform firePoint;
+    public GameObject bulletPrefab;
 
-    public float p1_nextActionTime = 0.0f;
-    public float p1_period = 0.1f;
-    public int p1_max_shots = 10;
-    public int p1_cur_shots;
-    public float p1_cd_time = 2;
+    public float nextActionTime = 0.0f;
+    public float period = 0.2f;
+    public int max_shots = 10;
+    public int cur_shots;
+    public float cd_time = 2;
 
-    void P1Shoot()
-    {
-        if (GameController.instance.gameOver != true)
-        {
-            Instantiate(p1_bulletPrefab, p1_firePoint.position, p1_firePoint.rotation);
-        }
-    }
 
     // Update is called once per frame
     void Update()
     {
-        //if (Input.GetButtonDown("Fire1"))
-        //{
-        // Shoot();
-        //}
+        if (GameController.instance.startGame == false) return;
         GameObject player1 = GameObject.FindGameObjectWithTag("Player1Tag");
-        if (Time.time > p1_nextActionTime)
+        if (Time.time > nextActionTime)
         {
-
             player1.GetComponent<Renderer>().material.color = new Color(1f, 1f, 1f);
-            if ( p1Touch.p1_touch.phase != TouchPhase.Ended && Camera.main.ScreenToWorldPoint(p1Touch.p1_touch.position).y > 2.5f)
+            Debug.Log("P1 y position: " + Camera.main.ScreenToWorldPoint(p1Touch.p1_touch.position).y);
+            if (p1Touch.p1_touch.phase != TouchPhase.Ended && Camera.main.ScreenToWorldPoint(p1Touch.p1_touch.position).y > 2.5f)
             {
-                if (p1_cur_shots == 0)
+                if (cur_shots == 0)
                 {
-                    p1_cur_shots = p1_max_shots;
-                    
-                    
+                    cur_shots = max_shots;
                 }
-                P1Shoot();
-                p1_nextActionTime = p1_nextActionTime + p1_period;
-                p1_cur_shots--;
-                if (p1_cur_shots == 0)
+                Shoot();
+                nextActionTime += period;
+                cur_shots--;
+                if (cur_shots == 0)
                 {
-                    p1_nextActionTime = p1_nextActionTime + p1_cd_time;
+                    nextActionTime += cd_time;
                     player1.GetComponent<Renderer>().material.color = new Color(0.5f, 0.5f, 0.5f);
                 }
-
-
             }
         }
     }
 
-    
+    void Shoot()
+    {
+        if (GameController.instance.gameOver != true)
+        {
+            Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        }
+    }
 }
-

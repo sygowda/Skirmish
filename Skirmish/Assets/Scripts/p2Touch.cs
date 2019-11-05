@@ -13,11 +13,16 @@ public class p2Touch : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (GameController.instance.startGame == false)
+        {
+            p2_touch.position = new Vector2(0f, -1f);
+            return;
+        }
         var numTouches = Input.touchCount;
         for (int i = 0; i < numTouches; i++)
         {
             Touch thisTouch = Input.GetTouch(i);
-            Debug.Log("touch at position: " + Camera.main.ScreenToWorldPoint(thisTouch.position));
+            //Debug.Log("touch at position: " + Camera.main.ScreenToWorldPoint(thisTouch.position));
             if (Camera.main.ScreenToWorldPoint(thisTouch.position).y < 0f)
             {
                 p2_touch = thisTouch;

@@ -27,22 +27,6 @@ public class Brick : MonoBehaviour
 
     }
 
-    void Update()
-    {
-         /*if(Input.GetKeyDown(KeyCode.Space))
-        {
-            if(currentColor == high)
-            {
-                currentColor = low;
-            } else
-            {
-                currentColor = high;
-            }
-        }
-
-        renderer.material.color = Color.Lerp(renderer.material.color, currentColor, 0.1f);*/
-    }
-
     public void TakeDamage(int damage)
     {
         weight -= damage;

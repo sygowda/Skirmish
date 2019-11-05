@@ -15,6 +15,9 @@ public class GameController : MonoBehaviour
     public bool gameOver = false;
     public ArrayList availableBrickPositions;
     public GameObject endMenu;
+    public Text startCountDown;
+    private float wait = 1.0f;
+    public bool startGame = false;
 
     void Awake()
     {
@@ -31,16 +34,28 @@ public class GameController : MonoBehaviour
     void Start()
     {
         availableBrickPositions = new ArrayList();
+        StartCoroutine("gameStartCountdown");
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(startGame) startCountDown.gameObject.SetActive(false);
         int playerWon = AllChestsDestroyed();
-        if (playerWon >= 0)
-            {
-                GameOver(playerWon);
-            }
+        if (playerWon >= 0) GameOver(playerWon);
+    }
+
+    IEnumerator gameStartCountdown()
+    {
+        startCountDown.text = "3";
+        yield return new WaitForSeconds(1);
+        startCountDown.text = "2";
+        yield return new WaitForSeconds(1);
+        startCountDown.text = "1";
+        yield return new WaitForSeconds(1);
+        startCountDown.text = "GO!";
+        yield return new WaitForSeconds(1);
+        startGame = true;
     }
 
     public int AllChestsDestroyed()

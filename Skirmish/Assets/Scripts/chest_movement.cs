@@ -10,6 +10,7 @@ public class chest_movement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         if (GetComponent<Rigidbody2D>().position.x < 0)
         {
             x_speed = -x_speed;
