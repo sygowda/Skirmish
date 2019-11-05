@@ -15,6 +15,10 @@ public class GameController : MonoBehaviour
     public bool gameOver = false;
     public ArrayList availableBrickPositions;
     public GameObject endMenu;
+    public bool isStart = false;
+    public Text startCountDown;
+    private float timeToStart = 3.0f;
+    public bool startGame = false;
 
     void Awake()
     {
@@ -36,6 +40,17 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (timeToStart >= 0)
+        {
+            timeToStart -= Time.deltaTime;
+            startCountDown.text = (timeToStart).ToString("0");
+        }
+        else
+        {
+            startCountDown.gameObject.SetActive(false);
+            startGame = true;
+        }
+
         int playerWon = AllChestsDestroyed();
         if (playerWon >= 0)
             {

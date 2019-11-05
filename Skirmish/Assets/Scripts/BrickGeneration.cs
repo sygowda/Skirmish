@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BrickGeneration : MonoBehaviour
 {
-    public int numberOfBricks = 6;
+    public int numberOfBricks = 8;
     private float startXPosition = -2.5f;
     public GameObject brickPrefab;
     void Start()

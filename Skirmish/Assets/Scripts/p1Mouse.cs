@@ -15,6 +15,7 @@ public class p1Mouse : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (GameController.instance.startGame == false) return;
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         Vector3 point = transform.position;
         point.x = ray.origin.x + (ray.direction.x * p1distance);
