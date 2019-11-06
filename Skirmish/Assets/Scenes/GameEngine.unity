@@ -489,7 +489,7 @@ GameObject:
   m_Component:
   - component: {fileID: 93783442}
   m_Layer: 0
-  m_Name: FirePoint
+  m_Name: FirePoint2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2210,6 +2210,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d38fd1f9f2ad4e62a54da4bd336768d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  firePoint: {fileID: 1757476222}
+  bulletPrefab: {fileID: 5345782125606456440, guid: b3093ff8ebe7544bbbdbb1a9a57c0772,
+    type: 3}
+  nextActionTime: 0
+  period: 0.2
+  max_shots: 10
+  cur_shots: 0
+  cd_time: 2
 --- !u!114 &1400775345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3548,7 +3556,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1757476222}
   m_Layer: 0
-  m_Name: FirePoint 2
+  m_Name: FirePoint1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
