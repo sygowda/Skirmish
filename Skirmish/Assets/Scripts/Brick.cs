@@ -40,6 +40,9 @@ public class Brick : MonoBehaviour
     private void Break()
     {
         gameObject.SetActive(false);
+        weight = Random.Range(5, 40);
+        SetColor();
+        renderer.material.color = currentColor;
     }
 
 
