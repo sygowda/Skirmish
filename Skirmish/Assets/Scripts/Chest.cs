@@ -10,9 +10,11 @@ public class Chest : MonoBehaviour
     public GameObject text;
     public bool p1;//true for p1's chest
     public int index;
+    public static GameController gc;
     TextMeshPro tmp;
     void Start()
     {
+        gc = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
         health = 5;
         tmp = text.GetComponent<TextMeshPro>();
     }
@@ -35,7 +37,18 @@ public class Chest : MonoBehaviour
             }
             else
             {
-                Destroy(gameObject);
+                if (p1) {
+                    gc.p1_total -= UserData.getChest1(index);
+                    gc.p2_total += UserData.getChest1(index);
+                }
+                else
+                {
+                    gc.p1_total += UserData.getChest2(index);
+                    gc.p2_total -= UserData.getChest2(index);
+                }
+
+
+                    Destroy(gameObject);
             }
         }
     }
