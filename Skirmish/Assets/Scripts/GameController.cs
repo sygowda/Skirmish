@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class GameController : MonoBehaviour
 {
     private const int PLAYER_1 = 1;
@@ -16,6 +17,8 @@ public class GameController : MonoBehaviour
     public GameObject endMenu;
     public Text startCountDown;
     public bool startGame = false;
+    public int p1_total;
+    public int p2_total;
 
     void Awake()
     {
@@ -31,6 +34,8 @@ public class GameController : MonoBehaviour
 
     void Start()
     {
+        p1_total = UserData.getChest1_1() + UserData.getChest1_2();
+        p2_total = UserData.getChest2_1() + UserData.getChest2_2();
         StartCoroutine("gameStartCountdown");
     }
 
@@ -67,15 +72,15 @@ public class GameController : MonoBehaviour
     public void GameOver(int player)
     {
         gameOver = true;
+        int reward = p1_total;
 
-        if(player == PLAYER_1)
+        if (player == PLAYER_1)
         {
-            player1Text.text = ("You WIN 200 coins!");
-            player2Text.text = ("You LOSE 100 coins!"); 
+            player1Text.text = ("You WIN" + p1_total + "coins!");
         }
         else if (player == PLAYER_2)
         {
-            player2Text.text = ("You WIN 200 coins!");
+            player1Text.text = ("You Lose...");
             player1Text.text = ("You LOSE 100 coins!");
         }
         else
