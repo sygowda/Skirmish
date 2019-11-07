@@ -110,13 +110,13 @@ public class GameController : MonoBehaviour
         }
         else if (chestsForPlayer1.Length > chestsForPlayer2.Length)
         {
-            player1Text.text = ("You WIN!");
-            player2Text.text = ("You LOSE!");
+            player1Text.text = ("You WIN" + (p1_total - 100) + "coins!");
+            player2Text.text = ("You LOSE" + (p2_total - 100) + "coins!");
         }
         else
         {
-            player2Text.text = ("You WIN!");
-            player1Text.text = ("You LOSE!");
+            player2Text.text = ("You WIN" + (p2_total - 100) + "coins!");
+            player1Text.text = ("You LOSE" + (p1_total - 100) + "coins!");
         }
 
         player1Text.gameObject.SetActive(true);
