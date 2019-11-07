@@ -712,6 +712,7 @@ GameObject:
   - component: {fileID: 353117842}
   - component: {fileID: 353117841}
   - component: {fileID: 353117843}
+  - component: {fileID: 353117844}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -773,7 +774,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 353117839}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 128942002476f8843b125c94e03ddc79, type: 3}
   m_Name: 
@@ -781,6 +782,22 @@ MonoBehaviour:
   numberOfBricks: 6
   brickPrefab: {fileID: 8803138568082264122, guid: 37205c94add71dc4e9f342d4712b8c63,
     type: 3}
+--- !u!114 &353117844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 353117839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0063afd9921065044857574606f842a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  brickPrefab: {fileID: 8803138568082264122, guid: 37205c94add71dc4e9f342d4712b8c63,
+    type: 3}
+  rowNum: 2
+  colNum: 0
 --- !u!1 &501098793
 GameObject:
   m_ObjectHideFlags: 0
@@ -2214,8 +2231,8 @@ MonoBehaviour:
   bulletPrefab: {fileID: 5345782125606456440, guid: b3093ff8ebe7544bbbdbb1a9a57c0772,
     type: 3}
   nextActionTime: 0
-  period: 0.2
-  max_shots: 10
+  period: 0.1
+  max_shots: 20
   cur_shots: 0
   cd_time: 2
 --- !u!114 &1400775345
@@ -3698,8 +3715,8 @@ MonoBehaviour:
   bulletPrefab: {fileID: 5345782125606456440, guid: b3093ff8ebe7544bbbdbb1a9a57c0772,
     type: 3}
   nextActionTime: 0
-  period: 0.2
-  max_shots: 10
+  period: 0.1
+  max_shots: 20
   cur_shots: 0
   cd_time: 2
 --- !u!61 &1814922628
