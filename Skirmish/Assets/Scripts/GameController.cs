@@ -36,6 +36,8 @@ public class GameController : MonoBehaviour
     {
         p1_total = UserData.getChest1(0) + UserData.getChest1(1);
         p2_total = UserData.getChest2(0) + UserData.getChest2(1);
+        Debug.Log(p1_total);
+        Debug.Log(p2_total);
         StartCoroutine("gameStartCountdown");
     }
 
@@ -76,12 +78,14 @@ public class GameController : MonoBehaviour
 
         if (player == PLAYER_1)
         {
-            player1Text.text = ("You WIN" + p1_total + "coins!");
+            player1Text.text = ("You WIN" + (p1_total - 100) + "coins!");
+            player2Text.text = ("You LOSE" + (p2_total - 100) + "coins!");
         }
         else if (player == PLAYER_2)
         {
-            player1Text.text = ("You Lose...");
-            player1Text.text = ("You LOSE 100 coins!");
+            player2Text.text = ("You WIN" + (p2_total - 100) + "coins!");
+            player1Text.text = ("You LOSE" + (p1_total - 100) + "coins!");
+
         }
         else
         {
