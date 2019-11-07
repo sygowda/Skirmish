@@ -17,6 +17,7 @@ public class Weapon : MonoBehaviour
     {
         bulletBar = transform.Find("BulletCountBar");
         setBulletBarSize(1f);
+        p2Touch.p2_touch.phase = TouchPhase.Ended;
     }
 
     // Update is called once per frame

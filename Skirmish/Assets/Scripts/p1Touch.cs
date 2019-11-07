@@ -9,6 +9,14 @@ public class p1Touch : MonoBehaviour
     public bool drag = false;
     public static Touch p1_touch;
 
+    private void Start()
+    {
+        p1_touch = new Touch();
+        //{
+        //    phase = TouchPhase.Ended
+        //};
+    }
+
 
     // Update is called once per frame
     void Update()
