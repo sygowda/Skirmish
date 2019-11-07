@@ -22,7 +22,7 @@ public class P1Weapon : MonoBehaviour
         if (Time.time > nextActionTime)
         {
             player1.GetComponent<Renderer>().material.color = new Color(1f, 1f, 1f);
-            Debug.Log("P1 y position: " + Camera.main.ScreenToWorldPoint(p1Touch.p1_touch.position).y);
+            //Debug.Log("P1 y position: " + Camera.main.ScreenToWorldPoint(p1Touch.p1_touch.position).y);
             if (p1Touch.p1_touch.phase != TouchPhase.Ended && Camera.main.ScreenToWorldPoint(p1Touch.p1_touch.position).y > 2.5f)
             {
                 if (cur_shots == 0)

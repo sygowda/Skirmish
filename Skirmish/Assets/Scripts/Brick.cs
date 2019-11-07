@@ -39,10 +39,7 @@ public class Brick : MonoBehaviour
 
     private void Break()
     {
-        Vector2 p = this.transform.position;
-        print(p);
-        GameController.instance.availableBrickPositions.Add(p);
-        Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 
 

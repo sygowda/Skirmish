@@ -13,10 +13,8 @@ public class GameController : MonoBehaviour
     public Text player1Text;
     public Text player2Text;
     public bool gameOver = false;
-    public ArrayList availableBrickPositions;
     public GameObject endMenu;
     public Text startCountDown;
-    private float wait = 1.0f;
     public bool startGame = false;
 
     void Awake()
@@ -33,7 +31,6 @@ public class GameController : MonoBehaviour
 
     void Start()
     {
-        availableBrickPositions = new ArrayList();
         StartCoroutine("gameStartCountdown");
     }
 

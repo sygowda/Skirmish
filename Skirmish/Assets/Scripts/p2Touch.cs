@@ -42,7 +42,7 @@ public class p2Touch : MonoBehaviour
         if (p2_touch.phase == TouchPhase.Moved)
         {
             cursorObject.position = point;
-            Debug.Log("moved to position: " + point);
+            //Debug.Log("moved to position: " + point);
         }
             //if (p2_touch.phase == TouchPhase.Ended || p2_touch.phase == TouchPhase.Canceled)
             //{
