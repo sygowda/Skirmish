@@ -9,10 +9,8 @@ public static class UserData
 
     private static string name;
     private static int level, coin;
-    private static int chest1_1;
-    private static int chest1_2;
-    private static int chest2_1;
-    private static int chest2_2;
+    private static int[] chest1 = new int[2];
+    private static int[] chest2 = new int[2];
 
     public static void initialize(string name_, int level_, int coin_)
     {
@@ -37,46 +35,26 @@ public static class UserData
         coin += amount;
         if (coin < 0)
             coin = 0;
-        
+
     }
 
-    public static int getChest1_1()
+    public static int getChest1(int index)
     {
-        return chest1_1;
+        return chest1[index];
     }
 
-    public static int getChest1_2()
+    public static int getChest2(int index)
     {
-        return chest1_2;
+        return chest2[index];
     }
 
-    public static int getChest2_1()
-    {
-        return chest2_1;
-    }
 
-    public static int getChest2_2()
+    public static void setChest1(int val, int index)
     {
-        return chest2_2;
+        chest1[index] = val;
     }
-
-    public static void setChest1_1(int val)
+    public static void setChest2(int val, int index)
     {
-        chest1_1 = val;
-    }
-
-    public static void setChest1_2(int val)
-    {
-        chest1_2 = val;
-    }
-
-    public static void setChest2_1(int val)
-    {
-        chest2_1 = val;
-    }
-
-    public static void setChest2_2(int val)
-    {
-        chest2_2 = val;
+        chest2[index] = val;
     }
 }
