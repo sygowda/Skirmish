@@ -34,8 +34,8 @@ public class GameController : MonoBehaviour
 
     void Start()
     {
-        p1_total = UserData.getChest1_1() + UserData.getChest1_2();
-        p2_total = UserData.getChest2_1() + UserData.getChest2_2();
+        p1_total = UserData.getChest1(0) + UserData.getChest1(1);
+        p2_total = UserData.getChest2(0) + UserData.getChest2(1);
         StartCoroutine("gameStartCountdown");
     }
 

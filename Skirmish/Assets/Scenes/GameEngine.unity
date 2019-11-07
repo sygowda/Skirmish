@@ -3580,7 +3580,7 @@ MonoBehaviour:
   health: 0
   text: {fileID: 52134569}
   p1: 0
-  index: 2
+  index: 1
 --- !u!1 &1705239700
 GameObject:
   m_ObjectHideFlags: 0
@@ -4149,7 +4149,7 @@ MonoBehaviour:
   health: 0
   text: {fileID: 1575878921}
   p1: 1
-  index: 2
+  index: 1
 --- !u!1 &1865864692
 GameObject:
   m_ObjectHideFlags: 0
@@ -4311,7 +4311,7 @@ MonoBehaviour:
   health: 0
   text: {fileID: 1468136008}
   p1: 0
-  index: 1
+  index: 0
 --- !u!1 &1870395769
 GameObject:
   m_ObjectHideFlags: 0
@@ -5349,4 +5349,4 @@ MonoBehaviour:
   health: 0
   text: {fileID: 1256945730}
   p1: 1
-  index: 1
+  index: 0

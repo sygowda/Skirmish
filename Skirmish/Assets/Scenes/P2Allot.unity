@@ -1241,8 +1241,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1606769170}
-        m_MethodName: Click
+      - m_Target: {fileID: 11500000, guid: 480e26507215b4e279777951403a043a, type: 3}
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1370,8 +1370,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 343360405}
-        m_MethodName: Click
+      - m_Target: {fileID: 11500000, guid: 480e26507215b4e279777951403a043a, type: 3}
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1628,8 +1628,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1606769169}
-        m_MethodName: Click
+      - m_Target: {fileID: 11500000, guid: 480e26507215b4e279777951403a043a, type: 3}
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2260,8 +2260,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 343360406}
-        m_MethodName: Click
+      - m_Target: {fileID: 11500000, guid: 480e26507215b4e279777951403a043a, type: 3}
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
