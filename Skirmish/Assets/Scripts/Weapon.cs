@@ -6,13 +6,18 @@ public class Weapon : MonoBehaviour
 {
     public Transform firePoint;
     public GameObject bulletPrefab;
-
     public float nextActionTime = 0.0f;
-    public float period = 0.2f;
-    public int max_shots = 10;
+    public float period = 0.1f;
+    public int max_shots = 20;
     public int cur_shots;
     public float cd_time = 2;
+    Transform bulletBar;
 
+    private void Start()
+    {
+        bulletBar = transform.Find("BulletCountBar");
+        setBulletBarSize(1f);
+    }
 
     // Update is called once per frame
     void Update()
@@ -29,6 +34,8 @@ public class Weapon : MonoBehaviour
                 {
                     cur_shots = max_shots;
                 }
+                Debug.Log((float)cur_shots / max_shots);
+                setBulletBarSize((float)cur_shots / max_shots);
                 Shoot();
                 nextActionTime += period;
                 cur_shots--;
@@ -36,6 +43,7 @@ public class Weapon : MonoBehaviour
                 {
                     nextActionTime += cd_time;
                     player2.GetComponent<Renderer>().material.color = new Color(0.5f, 0.5f, 0.5f);
+                    setBulletBarSize(0f);
                 }
             }
         }
@@ -47,5 +55,17 @@ public class Weapon : MonoBehaviour
         {
             Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         }
+    }
+
+    public void setBulletBarSize(float normalizedSize)
+    {
+        if (normalizedSize > 0.3)
+        {
+            bulletBar.Find("BulletCount").GetComponent<Renderer>().material.color = new Color(0.31f, 0.77f, 0.26f);
+        } else
+        {
+            bulletBar.Find("BulletCount").GetComponent<Renderer>().material.color = new Color(0.66f, 0.77f, 0.65f);
+        }
+        bulletBar.localScale = new Vector2(bulletBar.localScale.x, normalizedSize);
     }
 }
