@@ -33,7 +33,7 @@ public class button_plus : MonoBehaviour
             }
             int newChestA = int.Parse(chestA.text) + 10;
             chestA.text = newChestA.ToString();
-            UserData.setChest1_1(newChestA);
+            UserData.setChest1(newChestA,0);
         }
     }
 
