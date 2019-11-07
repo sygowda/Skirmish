@@ -11,10 +11,12 @@ public class Chest : MonoBehaviour
     public bool p1;//true for p1's chest
     public int index;
     TextMeshPro tmp;
+    public GameController gc;
     void Start()
     {
         health = 5;
         tmp = text.GetComponent<TextMeshPro>();
+        gc = GameObject.Find("GameController").GetComponent<GameController>();
     }
 
     // Update is called once per frame
@@ -35,6 +37,16 @@ public class Chest : MonoBehaviour
             }
             else
             {
+                if (p1)
+                {
+                    gc.p1_total -= UserData.getChest1(index);
+                    gc.p2_total += UserData.getChest1(index);
+                }
+                else
+                {
+                    gc.p1_total += UserData.getChest2(index);
+                    gc.p2_total -= UserData.getChest2(index);
+                }
                 Destroy(gameObject);
             }
         }
