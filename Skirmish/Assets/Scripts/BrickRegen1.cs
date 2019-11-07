@@ -60,7 +60,7 @@ public class BrickRegen1 : MonoBehaviour
         {
             if(bricks[i].activeSelf == false)
             {
-                if (respawnTimeList[i].rate < 10) respawnTimeList[i].rate = Random.Range(10, 70);
+                if (respawnTimeList[i].rate < 10) respawnTimeList[i].rate = Random.Range(10, 100);
                 else
                 {
                     if (respawnTimeList[i].timeSinceLastSpawned >= respawnTimeList[i].rate)
