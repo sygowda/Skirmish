@@ -35,7 +35,7 @@ public class ChestButton : MonoBehaviour
             }
             int newChestA = int.Parse(chestA.text) + 10;
             chestA.text = newChestA.ToString();
-            UserData.setChest1(newChestA,0);
+            UserData.setChest1_1(newChestA);
         }
     }
 
