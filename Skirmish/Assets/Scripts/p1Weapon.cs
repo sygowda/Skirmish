@@ -12,6 +12,14 @@ public class P1Weapon : MonoBehaviour
     public int max_shots = 10;
     public int cur_shots;
     public float cd_time = 2;
+    Transform bulletBar;
+
+    private void Start()
+    {
+        bulletBar = transform.Find("BulletCountBar1");
+        setBulletBarSize(1f);
+    }
+
 
 
     // Update is called once per frame
@@ -29,6 +37,7 @@ public class P1Weapon : MonoBehaviour
                 {
                     cur_shots = max_shots;
                 }
+                setBulletBarSize((float)cur_shots / max_shots);
                 Shoot();
                 nextActionTime += period;
                 cur_shots--;
@@ -36,6 +45,7 @@ public class P1Weapon : MonoBehaviour
                 {
                     nextActionTime += cd_time;
                     player1.GetComponent<Renderer>().material.color = new Color(0.5f, 0.5f, 0.5f);
+                    setBulletBarSize(0f);
                 }
             }
         }
@@ -47,5 +57,18 @@ public class P1Weapon : MonoBehaviour
         {
             Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         }
+    }
+
+    public void setBulletBarSize(float normalizedSize)
+    {
+        if (normalizedSize > 0.3)
+        {
+            bulletBar.Find("BulletCount1").GetComponent<Renderer>().material.color = new Color(0.31f, 0.77f, 0.26f);
+        }
+        else
+        {
+            bulletBar.Find("BulletCount1").GetComponent<Renderer>().material.color = new Color(0.66f, 0.77f, 0.65f);
+        }
+        bulletBar.localScale = new Vector2(bulletBar.localScale.x, normalizedSize);
     }
 }
