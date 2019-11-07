@@ -8,6 +8,8 @@ public class Chest : MonoBehaviour
     // Start is called before the first frame update
     public int health;
     public GameObject text;
+    public bool p1;//true for p1's chest
+    public int index;
     TextMeshPro tmp;
     void Start()
     {
