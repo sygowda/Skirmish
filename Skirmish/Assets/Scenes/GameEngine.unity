@@ -2374,7 +2374,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 5345782125606456440, guid: b3093ff8ebe7544bbbdbb1a9a57c0772,
     type: 3}
   nextActionTime: 0
-  period: 0.2
+  period: 0.1
   max_shots: 20
   cur_shots: 0
   cd_time: 2
@@ -3859,7 +3859,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 5345782125606456440, guid: b3093ff8ebe7544bbbdbb1a9a57c0772,
     type: 3}
   nextActionTime: 0
-  period: 0.2
+  period: 0.1
   max_shots: 20
   cur_shots: 0
   cd_time: 2

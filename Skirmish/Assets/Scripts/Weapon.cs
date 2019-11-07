@@ -7,7 +7,7 @@ public class Weapon : MonoBehaviour
     public Transform firePoint;
     public GameObject bulletPrefab;
     public float nextActionTime = 0.0f;
-    public float period = 0.2f;
+    public float period = 0.1f;
     public int max_shots = 20;
     public int cur_shots;
     public float cd_time = 2;
