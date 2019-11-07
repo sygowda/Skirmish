@@ -829,7 +829,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   brickPrefab: {fileID: 8803138568082264122, guid: 37205c94add71dc4e9f342d4712b8c63,
     type: 3}
-  rowNum: 2
+  rowNum: 1
   colNum: 0
 --- !u!1 &465404878
 GameObject:
