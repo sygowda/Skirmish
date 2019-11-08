@@ -40,7 +40,7 @@ public class Weapon : MonoBehaviour
                 {
                     cur_shots = max_shots;
                 }
-                Debug.Log((float)cur_shots / max_shots);
+                //Debug.Log((float)cur_shots / max_shots);
                 setBulletBarSize((float)cur_shots / max_shots);
                 Shoot();
                 nextActionTime += period;

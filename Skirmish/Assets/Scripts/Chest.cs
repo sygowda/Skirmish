@@ -29,7 +29,7 @@ public class Chest : MonoBehaviour
     {
         if(collision.tag == "BulletTag")
         {
-            Debug.Log(health);
+            //Debug.Log(health);
             if (health > 1)
             {
                 health--;
