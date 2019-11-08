@@ -2377,7 +2377,7 @@ MonoBehaviour:
     type: 3}
   nextActionTime: 0
   period: 0.1
-  max_shots: 10
+  max_shots: 30
   cur_shots: 0
   cd_time: 2
 --- !u!114 &1400775345

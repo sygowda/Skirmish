@@ -23,6 +23,7 @@ public class ChestButton : MonoBehaviour
         chest = this.GetComponentInParent<TextMeshProUGUI>();
         confirmButton = this.transform.parent.parent.Find("Next").GetComponent<Button>();
         confirmButton.interactable = false;
+        save(10);
     }
 
     // Update is called once per frame
