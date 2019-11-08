@@ -46,7 +46,11 @@ public class GameController : MonoBehaviour
     {
         if(startGame) startCountDown.gameObject.SetActive(false);
         int playerWon = AllChestsDestroyed();
-        if (playerWon >= 0) GameOver(playerWon);
+        if (playerWon >= 0&& !gameOver)
+        {
+            GameOver(playerWon);
+        }
+            
     }
 
     IEnumerator gameStartCountdown()
@@ -73,13 +77,17 @@ public class GameController : MonoBehaviour
 
     public void GameOver(int player)
     {
+        if (gameOver)
+            return;
         gameOver = true;
+
         int reward = p1_total;
 
         if (player == PLAYER_1)
         {
             player1Text.text = ("You WIN" + (p1_total - 100) + " coins!");
             player2Text.text = ("You LOSE" + (100 - p2_total) + " coins!");
+            
         }
         else if (player == PLAYER_2)
         {
@@ -95,11 +103,18 @@ public class GameController : MonoBehaviour
 
         player1Text.gameObject.SetActive(true);
         player2Text.gameObject.SetActive(true);
+        endMenu.SetActive(true);
+        Debug.Log(p2_total - 100);
+        UserData.addCoin(p2_total - 100);
+        
     }
 
     public void GameOver()
     {
+        if (gameOver)
+            return;
         gameOver = true;
+
 
         GameObject[] chestsForPlayer1 = GameObject.FindGameObjectsWithTag("PlayerOneChestTag");
         GameObject[] chestsForPlayer2 = GameObject.FindGameObjectsWithTag("PlayerTwoChestTag");
@@ -122,5 +137,8 @@ public class GameController : MonoBehaviour
         player1Text.gameObject.SetActive(true);
         player2Text.gameObject.SetActive(true);
         endMenu.SetActive(true);
+        UserData.addCoin(p2_total - 100);
+        Debug.Log(p2_total - 100);
+        
     }
 }

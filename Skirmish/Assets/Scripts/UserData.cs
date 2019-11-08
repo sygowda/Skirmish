@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 
 public static class UserData
@@ -11,6 +12,7 @@ public static class UserData
     private static int level, coin;
     private static int[] chest1 = new int[2];// for upperplayer
     private static int[] chest2 = new int[2];// for lowerplayer
+    private static string filePath = "Assets/Sources/user.json";
 
     public static void initialize(string name_, int level_, int coin_)
     {
@@ -35,7 +37,23 @@ public static class UserData
         coin += amount;
         if (coin < 0)
             coin = 0;
+        saveUserData(coin);
 
+
+
+    }
+    public static void saveUserData(int coin)
+    {
+
+        
+        if (File.Exists(filePath))
+        {
+            File.WriteAllText(filePath, JsonUtility.ToJson(new User(coin, level, name)));
+        }
+        else
+        {
+            Debug.LogError("Cannot load game data!");
+        }
     }
 
     public static int getChest1(int index)
