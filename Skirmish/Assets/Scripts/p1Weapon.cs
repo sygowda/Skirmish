@@ -13,6 +13,7 @@ public class p1Weapon : MonoBehaviour
     public int cur_shots;
     public float cd_time = 2;
     Transform bulletBar;
+    private float elapsedTimeSinceStart;
 
     private void Start()
     {
@@ -25,9 +26,13 @@ public class p1Weapon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameController.instance.startGame == false) return;
+        if (GameController.instance.startGame == false)
+        {
+            elapsedTimeSinceStart = Time.time;
+            return;
+        }
         GameObject player1 = GameObject.FindGameObjectWithTag("Player1Tag");
-        if (Time.time > nextActionTime)
+        if ((Time.time - elapsedTimeSinceStart) > nextActionTime)
         {
             player1.GetComponent<Renderer>().material.color = new Color(1f, 1f, 1f);
             //Debug.Log("P1 y position: " + Camera.main.ScreenToWorldPoint(p1Touch.p1_touch.position).y);
