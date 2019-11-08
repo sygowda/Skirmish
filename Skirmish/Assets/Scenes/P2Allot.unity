@@ -914,7 +914,7 @@ MonoBehaviour:
   plusButton: {fileID: 711247961}
   minusButton: {fileID: 1493958952}
   index: 1
-  p1: 1
+  p2: 0
 --- !u!114 &343360407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2386,7 +2386,7 @@ RectTransform:
   m_GameObject: {fileID: 1517692773}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1597852727}
   - {fileID: 56067971}
@@ -2728,7 +2728,7 @@ MonoBehaviour:
   plusButton: {fileID: 1148563557}
   minusButton: {fileID: 696942302}
   index: 0
-  p1: 1
+  p2: 0
 --- !u!1 &1855787452
 GameObject:
   m_ObjectHideFlags: 0

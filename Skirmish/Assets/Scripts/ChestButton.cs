@@ -22,7 +22,6 @@ public class ChestButton : MonoBehaviour
         pocket = GameObject.Find("Remaining").GetComponent<TextMeshProUGUI>();
         chest = this.GetComponentInParent<TextMeshProUGUI>();
         confirmButton = this.transform.parent.parent.Find("Next").GetComponent<Button>();
-        confirmButton.interactable = false;
         save(10);
     }
 
