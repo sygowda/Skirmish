@@ -11,8 +11,6 @@ public class ChestButton : MonoBehaviour
     private Button confirmButton;
     public Button plusButton;
     public Button minusButton;
-    public int index;//index of chest, begin with 0
-    public bool p2; //true for lowerplayer
 
     // Start is called before the first frame update
     public void Start()
@@ -22,7 +20,6 @@ public class ChestButton : MonoBehaviour
         pocket = GameObject.Find("Remaining").GetComponent<TextMeshProUGUI>();
         chest = this.GetComponentInParent<TextMeshProUGUI>();
         confirmButton = this.transform.parent.parent.Find("Next").GetComponent<Button>();
-        save(10);
     }
 
     // Update is called once per frame
@@ -39,9 +36,10 @@ public class ChestButton : MonoBehaviour
             }
             int bank = int.Parse(chest.text) + 10;
             chest.text = bank.ToString();
-            save(bank);
         }
     }
+
+
     public void minusCoin()
     {
         int bank = int.Parse(chest.text);
@@ -56,16 +54,10 @@ public class ChestButton : MonoBehaviour
                 confirmButton.interactable = false;
             }
             pocket.text = "Coins: " + cash.ToString();
-            save(bank);
         }
     }
-    private void save(int v)
-    {
-        if (p2)
-            UserData.setChest2(v, index);
-        else
-            UserData.setChest1(v, index);
-    }
+
+
     private int parseCoins(string coins)
     {
         string coin = coins.Split(':')[1];
