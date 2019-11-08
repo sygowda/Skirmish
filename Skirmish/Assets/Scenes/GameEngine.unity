@@ -4150,7 +4150,7 @@ MonoBehaviour:
   health: 0
   text: {fileID: 1575878921}
   p1: 1
-  index: 1
+  index: 0
   gc: {fileID: 0}
 --- !u!1 &1865864692
 GameObject:
@@ -5352,5 +5352,5 @@ MonoBehaviour:
   health: 0
   text: {fileID: 1256945730}
   p1: 1
-  index: 0
+  index: 1
   gc: {fileID: 0}

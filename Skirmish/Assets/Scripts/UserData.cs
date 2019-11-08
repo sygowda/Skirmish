@@ -9,8 +9,8 @@ public static class UserData
 
     private static string name;
     private static int level, coin;
-    private static int[] chest1 = new int[2];
-    private static int[] chest2 = new int[2];
+    private static int[] chest1 = new int[2];// for upperplayer
+    private static int[] chest2 = new int[2];// for lowerplayer
 
     public static void initialize(string name_, int level_, int coin_)
     {

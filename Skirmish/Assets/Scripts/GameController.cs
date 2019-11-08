@@ -78,13 +78,13 @@ public class GameController : MonoBehaviour
 
         if (player == PLAYER_1)
         {
-            player1Text.text = ("You WIN" + (p1_total - 100) + "coins!");
-            player2Text.text = ("You LOSE" + (100 - p2_total) + "coins!");
+            player1Text.text = ("You WIN" + (p1_total - 100) + " coins!");
+            player2Text.text = ("You LOSE" + (100 - p2_total) + " coins!");
         }
         else if (player == PLAYER_2)
         {
-            player2Text.text = ("You WIN" + (p2_total - 100) + "coins!");
-            player1Text.text = ("You LOSE" + (100 - p1_total) + "coins!");
+            player2Text.text = ("You WIN" + (p2_total - 100) + " coins!");
+            player1Text.text = ("You LOSE" + (100 - p1_total) + " coins!");
 
         }
         else
@@ -104,19 +104,19 @@ public class GameController : MonoBehaviour
         GameObject[] chestsForPlayer1 = GameObject.FindGameObjectsWithTag("PlayerOneChestTag");
         GameObject[] chestsForPlayer2 = GameObject.FindGameObjectsWithTag("PlayerTwoChestTag");
 
-        if (chestsForPlayer1.Length == chestsForPlayer2.Length)
+        if (p1_total == p2_total)
         {
             drawText.SetActive(true);
         }
-        else if (chestsForPlayer1.Length > chestsForPlayer2.Length)
+        else if (p1_total > p2_total)
         {
-            player1Text.text = ("You WIN" + (p1_total - 100) + "coins!");
-            player2Text.text = ("You LOSE" + (100 - p2_total) + "coins!");
+            player1Text.text = ("You WIN" + (p1_total - 100) + " coins!");
+            player2Text.text = ("You LOSE" + (100 - p2_total) + " coins!");
         }
         else
         {
-            player2Text.text = ("You WIN" + (p2_total - 100) + "coins!");
-            player1Text.text = ("You LOSE" + (100 - p1_total) + "coins!");
+            player2Text.text = ("You WIN" + (p2_total - 100) + " coins!");
+            player1Text.text = ("You LOSE" + (100 - p1_total) + " coins!");
         }
 
         player1Text.gameObject.SetActive(true);

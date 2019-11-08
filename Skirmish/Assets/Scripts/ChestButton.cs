@@ -12,7 +12,7 @@ public class ChestButton : MonoBehaviour
     public Button plusButton;
     public Button minusButton;
     public int index;//index of chest, begin with 0
-    public bool p1; //true for p1 code
+    public bool p2; //true for lowerplayer
 
     // Start is called before the first frame update
     public void Start()
@@ -61,10 +61,10 @@ public class ChestButton : MonoBehaviour
     }
     private void save(int v)
     {
-        if (p1)
-            UserData.setChest1(v, index);
-        else
+        if (p2)
             UserData.setChest2(v, index);
+        else
+            UserData.setChest1(v, index);
     }
     private int parseCoins(string coins)
     {
