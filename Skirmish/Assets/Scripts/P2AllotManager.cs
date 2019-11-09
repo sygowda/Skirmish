@@ -48,6 +48,6 @@ public class P2AllotManager : MonoBehaviour
 
     void Save(int v, int i)
     {
-        UserData.setChest2(v, i);
+        UserData.setChest1(v, i); // upper player
     }
 }

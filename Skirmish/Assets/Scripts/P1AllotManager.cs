@@ -48,6 +48,6 @@ public class P1AllotManager : MonoBehaviour
 
     void Save(int v, int i)
     {
-        UserData.setChest1(v, i);
+        UserData.setChest2(v, i); // lower player
     }
 }
