@@ -80,7 +80,11 @@ public class GameController : MonoBehaviour
     public void GameOver(int player)
     {
         if (gameOver)
+        {
+            AnalyticsManager.saveAnalyticsData();
             return;
+        }
+
         gameOver = true;
 
         int reward = p1_total;
@@ -114,7 +118,10 @@ public class GameController : MonoBehaviour
     public void GameOver()
     {
         if (gameOver)
+        {
+            AnalyticsManager.saveAnalyticsData();
             return;
+        }
         gameOver = true;
 
 
