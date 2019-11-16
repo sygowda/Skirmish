@@ -19,6 +19,7 @@ public class GameController : MonoBehaviour
     public bool startGame = false;
     public int p1_total;
     public int p2_total;
+    public bool hasAnalytics = false;
 
     void Awake()
     {
@@ -40,6 +41,7 @@ public class GameController : MonoBehaviour
         Debug.Log(UserData.getChest1(1));
         Debug.Log(UserData.getChest2(0));
         Debug.Log(UserData.getChest2(1));
+        AnalyticsManager.initialize(0, 0);
         StartCoroutine("gameStartCountdown");
     }
 
@@ -81,11 +83,15 @@ public class GameController : MonoBehaviour
     {
         if (gameOver)
         {
-            AnalyticsManager.saveAnalyticsData();
             return;
         }
 
         gameOver = true;
+        if (!hasAnalytics)
+        {
+            AnalyticsManager.saveAnalyticsData();
+            hasAnalytics = true;
+        }
 
         int reward = p1_total;
 
@@ -118,15 +124,16 @@ public class GameController : MonoBehaviour
     public void GameOver()
     {
         if (gameOver)
-        {
-            AnalyticsManager.saveAnalyticsData();
+        { 
             return;
         }
+
         gameOver = true;
-
-
-        GameObject[] chestsForPlayer1 = GameObject.FindGameObjectsWithTag("PlayerOneChestTag");
-        GameObject[] chestsForPlayer2 = GameObject.FindGameObjectsWithTag("PlayerTwoChestTag");
+        if (!hasAnalytics)
+        {
+            AnalyticsManager.saveAnalyticsData();
+            hasAnalytics = true;
+        }
 
         if (p1_total == p2_total)
         {

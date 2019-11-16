@@ -48,6 +48,7 @@ public class p1Weapon : MonoBehaviour
                 cur_shots--;
                 if (cur_shots == 0)
                 {
+                    AnalyticsManager.increaseCoolDownCount(0);
                     nextActionTime += cd_time;
                     player1.GetComponent<Renderer>().material.color = new Color(0.5f, 0.5f, 0.5f);
                     setBulletBarSize(0f);

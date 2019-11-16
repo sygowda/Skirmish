@@ -5,37 +5,35 @@ using UnityEngine;
 
 public static class AnalyticsManager
 {
-    //private static string name;
-    //private static int level, coin;
 
-    //private static string name;
-    //private static int level, coin;
-    //private static int[] chest1 = new int[2];// for upperplayer
-    //private static int[] chest2 = new int[2];// for lowerplayer
-    private static string filePath = "Assets/Sources/analytics.json";
+    private static string filePath = "Assets/Sources/coolDownAnalytics.csv";
 
-    private static int coolDownCounter;
+    private static int[] coolDownCounter;
 
-    public static void initialize(int _coolDownCounter)
+    public static void initialize(int _coolDownCounter1, int _coolDownCounter2)
     {
-        coolDownCounter = _coolDownCounter;
+        coolDownCounter = new int[2];
+        coolDownCounter[0] = _coolDownCounter1;
+        coolDownCounter[1] = _coolDownCounter2;
     }
 
     public static void saveAnalyticsData()
     {
-        if (File.Exists(filePath))
+        if (!File.Exists(filePath))
         {
-            File.WriteAllText(filePath, JsonUtility.ToJson(new Analytics(coolDownCounter)));
+            string cooldownHeader = "Player" + "," + "CoolDownCount" + System.Environment.NewLine;
+            File.WriteAllText(filePath, cooldownHeader);
         }
-        else
-        {
-            Debug.LogError("Cannot load analytics data!");
-        }
+
+        string player1CoolDown = "playerOne" + "," + coolDownCounter[0] + System.Environment.NewLine;
+        File.AppendAllText(filePath, player1CoolDown);
+        string player2CoolDown = "playerTwo" + "," + coolDownCounter[1] + System.Environment.NewLine;
+        File.AppendAllText(filePath, player2CoolDown);
     }
 
-    public static void increaseCoolDown()
+    public static void increaseCoolDownCount(int player)
     {
-        coolDownCounter++;
+        coolDownCounter[player]++;
     }
 
 
