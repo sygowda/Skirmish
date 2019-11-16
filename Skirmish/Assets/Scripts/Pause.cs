@@ -12,6 +12,7 @@ public class Pause : MonoBehaviour
     {
         pausePanel.SetActive(true);
         Time.timeScale = 0f;
+        Debug.Log("Pause was clicked");
         pauseButton.SetActive(false);
     }
 

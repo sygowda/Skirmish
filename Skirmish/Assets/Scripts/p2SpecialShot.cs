@@ -12,15 +12,18 @@ public class p2SpecialShot : MonoBehaviour
     void Start()
     {
         
+        
     }
 
     public void ShootSpecial()
     {
-        if (GameController.instance.gameOver != true && numShots > 0)
+        Debug.Log("special shot button pressed");
+        if (numShots > 0) //GameController.instance.gameOver != true &&
         {
             Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
             numShots--;
         }
+        
     }
 }
 
