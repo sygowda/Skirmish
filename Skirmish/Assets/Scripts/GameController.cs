@@ -41,7 +41,7 @@ public class GameController : MonoBehaviour
         Debug.Log(UserData.getChest1(1));
         Debug.Log(UserData.getChest2(0));
         Debug.Log(UserData.getChest2(1));
-        AnalyticsManager.initialize(0, 0);
+        AnalyticsManager.initializeCoolDownTracker(0, 0);
         StartCoroutine("gameStartCountdown");
     }
 

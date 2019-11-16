@@ -12,7 +12,7 @@ public class Timer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        remainingTime = 30;
+        remainingTime = 0;
         Time.timeScale = 1; //Make sure time passes at the same rate as real time
     }
 
@@ -27,7 +27,7 @@ public class Timer : MonoBehaviour
         }
         gameTimer.text = ("" + remainingTime); //Show the remaining time on the screen
 
-        if(remainingTime <= 0 || GameController.instance.gameOver)
+        if(/*remainingTime <= 0 || */GameController.instance.gameOver)
         {
             StopCoroutine("LoseTime");
             GameController.instance.GameOver();
@@ -40,6 +40,7 @@ public class Timer : MonoBehaviour
         {
             yield return new WaitForSeconds(1);
             remainingTime++;
+            AnalyticsManager.setTotalGameDuration(remainingTime);
         }
     }
 }

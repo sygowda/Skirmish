@@ -17,7 +17,7 @@ public class Brick : MonoBehaviour
 
     void Awake()
     {
-        weight = Random.Range(5, 40);
+        weight = Random.Range(3, 30);
         renderer = GetComponent<Renderer>();
         SetColor();
         renderer.material.color = currentColor;
@@ -40,7 +40,7 @@ public class Brick : MonoBehaviour
     private void Break()
     {
         gameObject.SetActive(false);
-        weight = Random.Range(5, 40);
+        weight = Random.Range(3, 30);
         SetColor();
         renderer.material.color = currentColor;
     }
@@ -48,27 +48,27 @@ public class Brick : MonoBehaviour
 
     private void SetColor()
     {
-        if (weight >= 35)
+        if (weight >= 25)
         {
             currentColor = highPlus;
         }
-        else if(weight < 35 && weight >= 25)
+        else if(weight < 25 && weight >= 20)
         {
             currentColor = high;
         }
-        else if (weight < 25 && weight >= 20)
+        else if (weight < 20 && weight >= 15)
         {
             currentColor = mediumPlus;
         }
-        else if (weight < 20 && weight >= 15)
+        else if (weight < 15 && weight >= 10)
         {
             currentColor = medium;
         }
-        else if (weight < 15 && weight >= 10)
+        else if (weight < 10 && weight >= 5)
         {
             currentColor = lowPlus;
         }
-        else if (weight < 10)
+        else if (weight < 5)
         {
             currentColor = low;
         }
