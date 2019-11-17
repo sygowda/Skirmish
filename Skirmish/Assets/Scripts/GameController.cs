@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using System;
 
 public class GameController : MonoBehaviour
 {
@@ -20,7 +20,7 @@ public class GameController : MonoBehaviour
     public int p1_total;
     public int p2_total;
     public bool hasAnalytics = false;
-
+    public static DateTime startTime;
     void Awake()
     {
         if (instance == null)
@@ -42,8 +42,16 @@ public class GameController : MonoBehaviour
         Debug.Log(UserData.getChest2(0));
         Debug.Log(UserData.getChest2(1));
         AnalyticsManager.initializeCoolDownTracker(0, 0);
+        ChestDestroyAnalytics.initializep1ChestDestroyedTime();
+        ChestDestroyAnalytics.initializep2ChestDestroyedTime();
         StartCoroutine("gameStartCountdown");
+        startTime = DateTime.Now;
     }
+
+    //public DateTime getStartTime()
+    //{
+    //    return startTime;
+    //}
 
     // Update is called once per frame
     void Update()
@@ -90,6 +98,7 @@ public class GameController : MonoBehaviour
         if (!hasAnalytics)
         {
             AnalyticsManager.saveAnalyticsData();
+            ChestDestroyAnalytics.saveChestTimer();
             hasAnalytics = true;
         }
 
@@ -132,6 +141,7 @@ public class GameController : MonoBehaviour
         if (!hasAnalytics)
         {
             AnalyticsManager.saveAnalyticsData();
+            ChestDestroyAnalytics.saveChestTimer();
             hasAnalytics = true;
         }
 

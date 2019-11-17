@@ -59,6 +59,6 @@ public static class AnalyticsManager
     public static void setTotalGameDuration(int duration)
     { 
         timer = duration;
-        Debug.Log(timer);
+        //Debug.Log(timer);
     }
 }
