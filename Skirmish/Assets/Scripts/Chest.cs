@@ -46,19 +46,19 @@ public class Chest : MonoBehaviour
         {
             if (p1)
             {
-                Debug.Log("come through this place!");
+                //Debug.Log("come through this place!");
 
                 gc.p1_total -= UserData.getChest1(index);
                 gc.p2_total += UserData.getChest1(index);
-                ChestDestroyAnalytics.setP1ChestDestroyedTime();
+                ChestDestroyAnalytics.setP1ChestDestroyedTime(index);
             }
             else
             {
-                Debug.Log("come through that place!");
+               //Debug.Log("come through that place!");
 
                 gc.p1_total += UserData.getChest2(index);
                 gc.p2_total -= UserData.getChest2(index);
-                ChestDestroyAnalytics.setP2ChestDestroyedTime();
+                ChestDestroyAnalytics.setP2ChestDestroyedTime(index);
             }
             Destroy(gameObject);
         }
