@@ -27,34 +27,40 @@ public class Chest : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "BulletTag")
+        
+        
+        //Debug.Log(health);
+        if (health > 1)
         {
-            //Debug.Log(health);
-            if (health > 1)
+            if (collision.tag == "BulletTag")
             {
                 health--;
                 //Debug.Log(health);
             }
+            if (collision.tag == "SpecialBulletTag")
+            {
+                health = 0;
+            }
+        }
+        else
+        {
+            if (p1)
+            {
+                Debug.Log("come through this place!");
+
+                gc.p1_total -= UserData.getChest1(index);
+                gc.p2_total += UserData.getChest1(index);
+                ChestDestroyAnalytics.setP1ChestDestroyedTime();
+            }
             else
             {
-                if (p1)
-                {
-                    Debug.Log("come through this place!");
+                Debug.Log("come through that place!");
 
-                    gc.p1_total -= UserData.getChest1(index);
-                    gc.p2_total += UserData.getChest1(index);
-                    ChestDestroyAnalytics.setP1ChestDestroyedTime();
-                }
-                else
-                {
-                    Debug.Log("come through that place!");
-
-                    gc.p1_total += UserData.getChest2(index);
-                    gc.p2_total -= UserData.getChest2(index);
-                    ChestDestroyAnalytics.setP2ChestDestroyedTime();
-                }
-                Destroy(gameObject);
+                gc.p1_total += UserData.getChest2(index);
+                gc.p2_total -= UserData.getChest2(index);
+                ChestDestroyAnalytics.setP2ChestDestroyedTime();
             }
+            Destroy(gameObject);
         }
     }
 }

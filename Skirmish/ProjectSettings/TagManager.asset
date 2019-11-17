@@ -11,6 +11,7 @@ TagManager:
   - PlayerTwoChestTag
   - Player1Tag
   - Player2Tag
+  - SpecialBulletTag
   layers:
   - Default
   - TransparentFX

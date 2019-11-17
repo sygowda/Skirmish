@@ -945,6 +945,7 @@ MonoBehaviour:
   startGame: 0
   p1_total: 0
   p2_total: 0
+  hasAnalytics: 0
 --- !u!114 &353117843
 MonoBehaviour:
   m_ObjectHideFlags: 0
