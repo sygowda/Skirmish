@@ -28,9 +28,7 @@ public static class ChestDestroyAnalytics
 
     public static void setP1ChestDestroyedTime()
     {
-        //Debug.Log("look at this!");
-        //Debug.Log(p1ChestDestroyedTime[0]);
-        //Debug.Log(p1ChestDestroyedTime[1]);
+
         if (p1ChestDestroyedTime[0] == DateTime.MinValue)
         {
             p1ChestDestroyedTime[0] = DateTime.Now;
@@ -59,25 +57,23 @@ public static class ChestDestroyAnalytics
     {
         if (!File.Exists(chestDestroyTimeTrackerPath))
         {
-            string chestHeader = "Player" + ", " + "chest number" + ", " + "time spent" + Environment.NewLine;
+            string chestHeader = "Game start time" + "," + "Player" + "," + "Chest" + "," + "Chest value" + ","+"Chest destroyed time" + ","+ "time spent" + Environment.NewLine;
             File.WriteAllText(chestDestroyTimeTrackerPath, chestHeader);
         }
 
         DateTime startTiming = GameController.startTime;
-        String helper = "This game starts at " + startTiming + Environment.NewLine;
-        File.AppendAllText(chestDestroyTimeTrackerPath, helper);
 
         //Debug.Log(p2ChestDestroyedTime[0]);
-        string player1Destroyed1 = "Player1" + "," + p2ChestDestroyedTime[0] + Environment.NewLine;
+        string player1Destroyed1 = startTiming + ","+"Player1" + "," + p2ChestDestroyedTime[0] + Environment.NewLine;
         File.AppendAllText(chestDestroyTimeTrackerPath, player1Destroyed1);
 
-        string player1Destroyed2 = "Player1" + "," + p2ChestDestroyedTime[1] + Environment.NewLine;
+        string player1Destroyed2 = startTiming + ","+"Player1" + "," + p2ChestDestroyedTime[1] + Environment.NewLine;
         File.AppendAllText(chestDestroyTimeTrackerPath, player1Destroyed2);
 
-        string player2Destroyed1 = "Player2" + "," + p1ChestDestroyedTime[0] + Environment.NewLine;
+        string player2Destroyed1 = startTiming + ","+"Player2" + "," + p1ChestDestroyedTime[0] + Environment.NewLine;
         File.AppendAllText(chestDestroyTimeTrackerPath, player2Destroyed1);
 
-        string player2Destroyed2 = "Player2" + "," + p1ChestDestroyedTime[1] + Environment.NewLine;
+        string player2Destroyed2 = startTiming + ","+ "Player2" + "," + p1ChestDestroyedTime[1] + Environment.NewLine;
         File.AppendAllText(chestDestroyTimeTrackerPath, player2Destroyed2);
 
     }
