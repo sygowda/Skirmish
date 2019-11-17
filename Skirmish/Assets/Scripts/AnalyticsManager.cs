@@ -8,7 +8,6 @@ public static class AnalyticsManager
 
     private static string coolDownTrackerPath = "Assets/Sources/coolDownAnalytics.csv";
     private static string timerTrackerPath = "Assets/Sources/timerAnalytics.csv";
-
     private static int[] coolDownCounter;
     private static int timer;
 
