@@ -1,37 +1,37 @@
 Game start time,Player,Chest,Chest value,Chest destroyed time,time spent
-11/17/2019 11:35:07 AM,Player1,silver chest,20,not destroyed till the end
+11/17/2019 11:35:07 AM,Player1,silver chest,20,not destroyed till the end,NULL
 11/17/2019 11:35:07 AM,Player1,gold chest,80,11/17/2019 11:35:30 AM,00:00:22.5213190
 11/17/2019 11:35:07 AM,Player2,silver chest,70,11/17/2019 11:35:38 AM,00:00:31.0619820
 11/17/2019 11:35:07 AM,Player2,gold chest,30,11/17/2019 11:35:40 AM,00:00:32.2748760
-11/17/2019 11:35:57 AM,Player1,silver chest,50,not destroyed till the end
-11/17/2019 11:35:57 AM,Player1,gold chest,50,not destroyed till the end
+11/17/2019 11:35:57 AM,Player1,silver chest,50,not destroyed till the end,NULL
+11/17/2019 11:35:57 AM,Player1,gold chest,50,not destroyed till the end,NULL
 11/17/2019 11:35:57 AM,Player2,silver chest,20,11/17/2019 11:36:10 AM,00:00:12.0909720
 11/17/2019 11:35:57 AM,Player2,gold chest,80,11/17/2019 11:36:15 AM,00:00:17.9139890
 11/17/2019 11:37:01 AM,Player1,silver chest,30,11/17/2019 11:37:38 AM,00:00:36.3369700
 11/17/2019 11:37:01 AM,Player1,gold chest,70,11/17/2019 11:37:38 AM,00:00:36.8920320
-11/17/2019 11:37:01 AM,Player2,silver chest,70,not destroyed till the end
-11/17/2019 11:37:01 AM,Player2,gold chest,30,not destroyed till the end
+11/17/2019 11:37:01 AM,Player2,silver chest,70,not destroyed till the end,NULL
+11/17/2019 11:37:01 AM,Player2,gold chest,30,not destroyed till the end,NULL
 11/17/2019 11:37:48 AM,Player1,silver chest,80,11/17/2019 11:38:10 AM,00:00:22.1504170
 11/17/2019 11:37:48 AM,Player1,gold chest,20,11/17/2019 11:38:33 AM,00:00:45.5908230
 11/17/2019 11:37:48 AM,Player2,silver chest,60,11/17/2019 11:38:25 AM,00:00:37.0080740
-11/17/2019 11:37:48 AM,Player2,gold chest,40,not destroyed till the end
+11/17/2019 11:37:48 AM,Player2,gold chest,40,not destroyed till the end,NULL
 11/18/2019 10:56:04 AM,Player1,silver chest,10,11/18/2019 10:56:21 AM,00:00:17.0700999
 11/18/2019 10:56:04 AM,Player1,gold chest,90,11/18/2019 10:56:23 AM,00:00:18.7513056
-11/18/2019 10:56:04 AM,Player2,silver chest,40,not destroyed till the end
-11/18/2019 10:56:04 AM,Player2,gold chest,60,not destroyed till the end
+11/18/2019 10:56:04 AM,Player2,silver chest,40,not destroyed till the end,NULL
+11/18/2019 10:56:04 AM,Player2,gold chest,60,not destroyed till the end,NULL
 11/18/2019 10:58:29 AM,Player1,silver chest,30,11/18/2019 10:58:50 AM,00:00:21.0109118
 11/18/2019 10:58:29 AM,Player1,gold chest,70,11/18/2019 10:58:51 AM,00:00:22.0950758
-11/18/2019 10:58:29 AM,Player2,silver chest,50,not destroyed till the end
-11/18/2019 10:58:29 AM,Player2,gold chest,50,not destroyed till the end
+11/18/2019 10:58:29 AM,Player2,silver chest,50,not destroyed till the end,NULL
+11/18/2019 10:58:29 AM,Player2,gold chest,50,not destroyed till the end,NULL
 11/18/2019 10:59:04 AM,Player1,silver chest,60,11/18/2019 10:59:25 AM,00:00:21.1150908
 11/18/2019 10:59:04 AM,Player1,gold chest,40,11/18/2019 10:59:28 AM,00:00:23.7605155
-11/18/2019 10:59:04 AM,Player2,silver chest,50,not destroyed till the end
-11/18/2019 10:59:04 AM,Player2,gold chest,50,not destroyed till the end
-11/18/2019 11:02:15 AM,Player1,silver chest,50,not destroyed till the end
-11/18/2019 11:02:15 AM,Player1,gold chest,50,not destroyed till the end
+11/18/2019 10:59:04 AM,Player2,silver chest,50,not destroyed till the end,NULL
+11/18/2019 10:59:04 AM,Player2,gold chest,50,not destroyed till the end,NULL
+11/18/2019 11:02:15 AM,Player1,silver chest,50,not destroyed till the end,NULL
+11/18/2019 11:02:15 AM,Player1,gold chest,50,not destroyed till the end,NULL
 11/18/2019 11:02:15 AM,Player2,silver chest,90,11/18/2019 11:02:27 AM,00:00:12.0295423
 11/18/2019 11:02:15 AM,Player2,gold chest,10,11/18/2019 11:02:51 AM,00:00:36.4233924
-11/18/2019 11:03:07 AM,Player1,silver chest,50,not destroyed till the end
+11/18/2019 11:03:07 AM,Player1,silver chest,50,not destroyed till the end,NULL
 11/18/2019 11:03:07 AM,Player1,gold chest,50,11/18/2019 11:03:40 AM,00:00:33.8679910
 11/18/2019 11:03:07 AM,Player2,silver chest,40,11/18/2019 11:03:34 AM,00:00:27.1360550
 11/18/2019 11:03:07 AM,Player2,gold chest,60,11/18/2019 11:03:49 AM,00:00:42.8890650
