@@ -19,7 +19,6 @@ TimeStamp,Player,CoolDownCount
 11/16/2019 8:09:50 PM,playerTwo,3
 11/16/2019 8:18:19 PM,playerOne,0
 11/16/2019 8:18:19 PM,playerTwo,2
-<<<<<<< HEAD
 11/17/2019 12:34:25 PM,playerOne,3
 11/17/2019 12:34:25 PM,playerTwo,3
 11/17/2019 2:49:18 PM,playerOne,3
@@ -28,7 +27,6 @@ TimeStamp,Player,CoolDownCount
 11/17/2019 2:53:28 PM,playerTwo,2
 11/17/2019 2:57:13 PM,playerOne,5
 11/17/2019 2:57:13 PM,playerTwo,5
-=======
 11/17/2019 11:24:35 AM,playerOne,8
 11/17/2019 11:24:35 AM,playerTwo,5
 11/17/2019 11:26:50 AM,playerOne,0
@@ -43,4 +41,13 @@ TimeStamp,Player,CoolDownCount
 11/17/2019 11:37:38 AM,playerTwo,6
 11/17/2019 11:38:33 AM,playerOne,6
 11/17/2019 11:38:33 AM,playerTwo,8
->>>>>>> e527655c09ad3daf66ba6ee9d3301224111b31e0
+11/18/2019 10:56:23 AM,playerOne,3
+11/18/2019 10:56:23 AM,playerTwo,3
+11/18/2019 10:58:51 AM,playerOne,4
+11/18/2019 10:58:51 AM,playerTwo,4
+11/18/2019 10:59:28 AM,playerOne,4
+11/18/2019 10:59:28 AM,playerTwo,4
+11/18/2019 11:02:51 AM,playerOne,6
+11/18/2019 11:02:51 AM,playerTwo,6
+11/18/2019 11:03:49 AM,playerOne,8
+11/18/2019 11:03:49 AM,playerTwo,8
