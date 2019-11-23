@@ -28,6 +28,7 @@ public class Bullet : MonoBehaviour
         {
             brick.TakeDamage(1);
         }
+        BulletSpecial bullet = collision.GetComponent<BulletSpecial>();
         //Debug.Log(collision.name);
         Destroy(gameObject);
     }

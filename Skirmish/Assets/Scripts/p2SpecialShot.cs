@@ -8,17 +8,11 @@ public class p2SpecialShot : MonoBehaviour
     public Transform firePoint;
     public GameObject bulletPrefab;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-        
-    }
 
     public void ShootSpecial()
     {
         Debug.Log("special shot button pressed");
-        if (p2numShots > 0) //GameController.instance.gameOver != true &&
+        if (p2numShots > 0 && GameController.instance.startGame && !GameController.instance.gameOver) //GameController.instance.gameOver != true &&
         {
             Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
             p2numShots--;

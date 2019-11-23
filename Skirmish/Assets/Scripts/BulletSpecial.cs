@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BulletSpecial : MonoBehaviour
 {
-    public float speed = 20f;
+    public float speed = 15f;
     public Rigidbody2D rb;
 
     // Start is called before the first frame update
@@ -28,7 +28,11 @@ public class BulletSpecial : MonoBehaviour
         {
             brick.TakeDamage(50);
         }
-        Destroy(gameObject);
+        if (collision.gameObject.tag == "Player1Tag" || collision.gameObject.tag == "Player2Tag")
+        {
+            Destroy(gameObject);
+            GameController.instance.GameOver(collision.gameObject.tag == "Player1Tag" ? 2 : 1);
+        }
     }
 
     private void OnBecameInvisible()

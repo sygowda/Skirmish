@@ -35,3 +35,147 @@ Game start time,Player,Chest,Chest value,Chest destroyed time,time spent
 11/18/2019 11:03:07 AM,Player1,gold chest,50,11/18/2019 11:03:40 AM,00:00:33.8679910
 11/18/2019 11:03:07 AM,Player2,silver chest,40,11/18/2019 11:03:34 AM,00:00:27.1360550
 11/18/2019 11:03:07 AM,Player2,gold chest,60,11/18/2019 11:03:49 AM,00:00:42.8890650
+11/23/2019 3:06:30 PM,Player1,silver chest,0,11/23/2019 3:06:47 PM,00:00:16.5865384
+11/23/2019 3:06:30 PM,Player1,gold chest,0,11/23/2019 3:06:46 PM,00:00:16.2334777
+11/23/2019 3:06:30 PM,Player2,silver chest,0,not destroyed till the end
+11/23/2019 3:06:30 PM,Player2,gold chest,0,not destroyed till the end
+11/23/2019 3:06:57 PM,Player1,silver chest,0,11/23/2019 3:07:24 PM,00:00:27.1912048
+11/23/2019 3:06:57 PM,Player1,gold chest,0,11/23/2019 3:07:19 PM,00:00:22.7540564
+11/23/2019 3:06:57 PM,Player2,silver chest,0,not destroyed till the end
+11/23/2019 3:06:57 PM,Player2,gold chest,0,11/23/2019 3:07:09 PM,00:00:12.2107214
+11/23/2019 3:07:27 PM,Player1,silver chest,0,not destroyed till the end
+11/23/2019 3:07:27 PM,Player1,gold chest,0,not destroyed till the end
+11/23/2019 3:07:27 PM,Player2,silver chest,0,11/23/2019 3:07:55 PM,00:00:27.5440275
+11/23/2019 3:07:27 PM,Player2,gold chest,0,11/23/2019 3:07:51 PM,00:00:23.4905085
+11/23/2019 3:08:00 PM,Player1,silver chest,0,not destroyed till the end
+11/23/2019 3:08:00 PM,Player1,gold chest,0,11/23/2019 3:08:18 PM,00:00:17.4017287
+11/23/2019 3:08:00 PM,Player2,silver chest,0,11/23/2019 3:08:27 PM,00:00:26.7192314
+11/23/2019 3:08:00 PM,Player2,gold chest,0,11/23/2019 3:08:28 PM,00:00:27.4816276
+11/23/2019 3:08:33 PM,Player1,silver chest,0,11/23/2019 3:08:49 PM,00:00:16.7651480
+11/23/2019 3:08:33 PM,Player1,gold chest,0,11/23/2019 3:08:51 PM,00:00:18.2433377
+11/23/2019 3:08:33 PM,Player2,silver chest,0,11/23/2019 3:08:44 PM,00:00:11.6819387
+11/23/2019 3:08:33 PM,Player2,gold chest,0,not destroyed till the end
+11/23/2019 3:09:25 PM,Player1,silver chest,0,not destroyed till the end
+11/23/2019 3:09:25 PM,Player1,gold chest,0,11/23/2019 3:09:34 PM,00:00:08.9392900
+11/23/2019 3:09:25 PM,Player2,silver chest,0,11/23/2019 3:09:41 PM,00:00:15.4069695
+11/23/2019 3:09:25 PM,Player2,gold chest,0,11/23/2019 3:09:48 PM,00:00:22.6532838
+11/23/2019 3:10:01 PM,Player1,silver chest,0,11/23/2019 3:10:20 PM,00:00:19.3079911
+11/23/2019 3:10:01 PM,Player1,gold chest,0,11/23/2019 3:10:17 PM,00:00:15.7891540
+11/23/2019 3:10:01 PM,Player2,silver chest,0,not destroyed till the end
+11/23/2019 3:10:01 PM,Player2,gold chest,0,not destroyed till the end
+11/23/2019 3:10:28 PM,Player1,silver chest,0,not destroyed till the end
+11/23/2019 3:10:28 PM,Player1,gold chest,0,not destroyed till the end
+11/23/2019 3:10:28 PM,Player2,silver chest,0,11/23/2019 3:10:35 PM,00:00:07.2329621
+11/23/2019 3:10:28 PM,Player2,gold chest,0,11/23/2019 3:10:46 PM,00:00:18.0332714
+11/23/2019 3:10:56 PM,Player1,silver chest,0,not destroyed till the end
+11/23/2019 3:10:56 PM,Player1,gold chest,0,not destroyed till the end
+11/23/2019 3:10:56 PM,Player2,silver chest,0,11/23/2019 3:11:13 PM,00:00:16.7011775
+11/23/2019 3:10:56 PM,Player2,gold chest,0,11/23/2019 3:11:13 PM,00:00:16.2768413
+11/23/2019 3:11:18 PM,Player1,silver chest,0,11/23/2019 3:11:34 PM,00:00:16.8703283
+11/23/2019 3:11:18 PM,Player1,gold chest,0,11/23/2019 3:11:37 PM,00:00:19.0108670
+11/23/2019 3:11:18 PM,Player2,silver chest,0,11/23/2019 3:11:26 PM,00:00:08.0812505
+11/23/2019 3:11:18 PM,Player2,gold chest,0,not destroyed till the end
+11/23/2019 3:11:42 PM,Player1,silver chest,0,not destroyed till the end
+11/23/2019 3:11:42 PM,Player1,gold chest,0,not destroyed till the end
+11/23/2019 3:11:42 PM,Player2,silver chest,0,11/23/2019 3:11:54 PM,00:00:12.4140332
+11/23/2019 3:11:42 PM,Player2,gold chest,0,11/23/2019 3:11:56 PM,00:00:14.0906568
+11/23/2019 3:12:23 PM,Player1,silver chest,0,not destroyed till the end
+11/23/2019 3:12:23 PM,Player1,gold chest,0,11/23/2019 3:12:44 PM,00:00:20.6664957
+11/23/2019 3:12:23 PM,Player2,silver chest,0,11/23/2019 3:12:40 PM,00:00:17.2980472
+11/23/2019 3:12:23 PM,Player2,gold chest,0,11/23/2019 3:12:44 PM,00:00:20.6664957
+11/23/2019 3:12:53 PM,Player1,silver chest,0,11/23/2019 3:13:16 PM,00:00:22.3719283
+11/23/2019 3:12:53 PM,Player1,gold chest,0,11/23/2019 3:13:17 PM,00:00:24.0452303
+11/23/2019 3:12:53 PM,Player2,silver chest,0,not destroyed till the end
+11/23/2019 3:12:53 PM,Player2,gold chest,0,not destroyed till the end
+11/23/2019 3:13:52 PM,Player1,silver chest,0,not destroyed till the end
+11/23/2019 3:13:52 PM,Player1,gold chest,0,11/23/2019 3:14:05 PM,00:00:12.2966353
+11/23/2019 3:13:52 PM,Player2,silver chest,0,11/23/2019 3:14:10 PM,00:00:17.3319890
+11/23/2019 3:13:52 PM,Player2,gold chest,0,11/23/2019 3:14:10 PM,00:00:17.3319890
+11/23/2019 3:14:45 PM,Player1,silver chest,0,11/23/2019 3:15:03 PM,00:00:17.3327477
+11/23/2019 3:14:45 PM,Player1,gold chest,0,11/23/2019 3:15:04 PM,00:00:19.0095514
+11/23/2019 3:14:45 PM,Player2,silver chest,0,11/23/2019 3:14:53 PM,00:00:07.2104558
+11/23/2019 3:14:45 PM,Player2,gold chest,0,not destroyed till the end
+11/23/2019 3:15:22 PM,Player1,silver chest,0,11/23/2019 3:15:29 PM,00:00:07.2452974
+11/23/2019 3:15:22 PM,Player1,gold chest,0,11/23/2019 3:15:29 PM,00:00:07.2452974
+11/23/2019 3:15:22 PM,Player2,silver chest,0,not destroyed till the end
+11/23/2019 3:15:22 PM,Player2,gold chest,0,not destroyed till the end
+11/23/2019 3:16:16 PM,Player1,silver chest,0,11/23/2019 3:16:33 PM,00:00:16.5657805
+11/23/2019 3:16:16 PM,Player1,gold chest,0,11/23/2019 3:16:34 PM,00:00:18.0056092
+11/23/2019 3:16:16 PM,Player2,silver chest,0,not destroyed till the end
+11/23/2019 3:16:16 PM,Player2,gold chest,0,not destroyed till the end
+11/23/2019 3:16:39 PM,Player1,silver chest,0,11/23/2019 3:16:51 PM,00:00:11.3636001
+11/23/2019 3:16:39 PM,Player1,gold chest,0,11/23/2019 3:16:51 PM,00:00:11.2385583
+11/23/2019 3:16:39 PM,Player2,silver chest,0,not destroyed till the end
+11/23/2019 3:16:39 PM,Player2,gold chest,0,not destroyed till the end
+11/23/2019 3:17:06 PM,Player1,silver chest,0,11/23/2019 3:17:18 PM,00:00:12.2893676
+11/23/2019 3:17:06 PM,Player1,gold chest,0,not destroyed till the end
+11/23/2019 3:17:06 PM,Player2,silver chest,0,11/23/2019 3:17:13 PM,00:00:07.3983674
+11/23/2019 3:17:06 PM,Player2,gold chest,0,11/23/2019 3:17:22 PM,00:00:16.8321875
+11/23/2019 3:17:28 PM,Player1,silver chest,0,11/23/2019 3:17:42 PM,00:00:14.0123967
+11/23/2019 3:17:28 PM,Player1,gold chest,0,11/23/2019 3:17:42 PM,00:00:14.0123967
+11/23/2019 3:17:28 PM,Player2,silver chest,0,not destroyed till the end
+11/23/2019 3:17:28 PM,Player2,gold chest,0,not destroyed till the end
+11/23/2019 3:39:53 PM,Player1,silver chest,0,11/23/2019 3:40:05 PM,00:00:12.1862327
+11/23/2019 3:39:53 PM,Player1,gold chest,0,not destroyed till the end
+11/23/2019 3:39:53 PM,Player2,silver chest,0,not destroyed till the end
+11/23/2019 3:39:53 PM,Player2,gold chest,0,not destroyed till the end
+11/23/2019 3:40:20 PM,Player1,silver chest,0,not destroyed till the end
+11/23/2019 3:40:20 PM,Player1,gold chest,0,not destroyed till the end
+11/23/2019 3:40:20 PM,Player2,silver chest,0,not destroyed till the end
+11/23/2019 3:40:20 PM,Player2,gold chest,0,not destroyed till the end
+11/23/2019 3:40:28 PM,Player1,silver chest,0,not destroyed till the end
+11/23/2019 3:40:28 PM,Player1,gold chest,0,not destroyed till the end
+11/23/2019 3:40:28 PM,Player2,silver chest,0,not destroyed till the end
+11/23/2019 3:40:28 PM,Player2,gold chest,0,not destroyed till the end
+11/23/2019 3:40:38 PM,Player1,silver chest,0,not destroyed till the end
+11/23/2019 3:40:38 PM,Player1,gold chest,0,not destroyed till the end
+11/23/2019 3:40:38 PM,Player2,silver chest,0,not destroyed till the end
+11/23/2019 3:40:38 PM,Player2,gold chest,0,not destroyed till the end
+11/23/2019 3:40:48 PM,Player1,silver chest,0,not destroyed till the end
+11/23/2019 3:40:48 PM,Player1,gold chest,0,not destroyed till the end
+11/23/2019 3:40:48 PM,Player2,silver chest,0,not destroyed till the end
+11/23/2019 3:40:48 PM,Player2,gold chest,0,not destroyed till the end
+11/23/2019 3:40:58 PM,Player1,silver chest,0,not destroyed till the end
+11/23/2019 3:40:58 PM,Player1,gold chest,0,not destroyed till the end
+11/23/2019 3:40:58 PM,Player2,silver chest,0,not destroyed till the end
+11/23/2019 3:40:58 PM,Player2,gold chest,0,not destroyed till the end
+11/23/2019 3:41:14 PM,Player1,silver chest,0,not destroyed till the end
+11/23/2019 3:41:14 PM,Player1,gold chest,0,not destroyed till the end
+11/23/2019 3:41:14 PM,Player2,silver chest,0,not destroyed till the end
+11/23/2019 3:41:14 PM,Player2,gold chest,0,not destroyed till the end
+11/23/2019 3:41:23 PM,Player1,silver chest,0,not destroyed till the end
+11/23/2019 3:41:23 PM,Player1,gold chest,0,not destroyed till the end
+11/23/2019 3:41:23 PM,Player2,silver chest,0,not destroyed till the end
+11/23/2019 3:41:23 PM,Player2,gold chest,0,not destroyed till the end
+11/23/2019 3:48:20 PM,Player1,silver chest,0,not destroyed till the end
+11/23/2019 3:48:20 PM,Player1,gold chest,0,not destroyed till the end
+11/23/2019 3:48:20 PM,Player2,silver chest,0,not destroyed till the end
+11/23/2019 3:48:20 PM,Player2,gold chest,0,not destroyed till the end
+11/23/2019 3:48:46 PM,Player1,silver chest,0,not destroyed till the end
+11/23/2019 3:48:46 PM,Player1,gold chest,0,not destroyed till the end
+11/23/2019 3:48:46 PM,Player2,silver chest,0,11/23/2019 3:49:17 PM,00:00:31.0217088
+11/23/2019 3:48:46 PM,Player2,gold chest,0,11/23/2019 3:49:29 PM,00:00:42.5100278
+11/23/2019 3:49:34 PM,Player1,silver chest,0,not destroyed till the end
+11/23/2019 3:49:34 PM,Player1,gold chest,0,not destroyed till the end
+11/23/2019 3:49:34 PM,Player2,silver chest,0,not destroyed till the end
+11/23/2019 3:49:34 PM,Player2,gold chest,0,not destroyed till the end
+11/23/2019 3:49:53 PM,Player1,silver chest,0,11/23/2019 3:50:19 PM,00:00:25.6349145
+11/23/2019 3:49:53 PM,Player1,gold chest,0,11/23/2019 3:50:20 PM,00:00:27.4805490
+11/23/2019 3:49:53 PM,Player2,silver chest,0,11/23/2019 3:50:20 PM,00:00:26.7461736
+11/23/2019 3:49:53 PM,Player2,gold chest,0,not destroyed till the end
+11/23/2019 3:50:26 PM,Player1,silver chest,0,not destroyed till the end
+11/23/2019 3:50:26 PM,Player1,gold chest,0,not destroyed till the end
+11/23/2019 3:50:26 PM,Player2,silver chest,0,11/23/2019 3:50:39 PM,00:00:12.2570321
+11/23/2019 3:50:26 PM,Player2,gold chest,0,11/23/2019 3:50:49 PM,00:00:22.3282938
+11/23/2019 3:50:53 PM,Player1,silver chest,0,not destroyed till the end
+11/23/2019 3:50:53 PM,Player1,gold chest,0,not destroyed till the end
+11/23/2019 3:50:53 PM,Player2,silver chest,0,11/23/2019 3:51:11 PM,00:00:18.0660594
+11/23/2019 3:50:53 PM,Player2,gold chest,0,11/23/2019 3:51:05 PM,00:00:12.2964705
+11/23/2019 3:51:16 PM,Player1,silver chest,0,not destroyed till the end
+11/23/2019 3:51:16 PM,Player1,gold chest,0,not destroyed till the end
+11/23/2019 3:51:16 PM,Player2,silver chest,0,11/23/2019 3:51:30 PM,00:00:13.9345491
+11/23/2019 3:51:16 PM,Player2,gold chest,0,11/23/2019 3:51:30 PM,00:00:13.9345491
+11/23/2019 3:52:44 PM,Player1,silver chest,0,not destroyed till the end
+11/23/2019 3:52:44 PM,Player1,gold chest,0,11/23/2019 3:53:08 PM,00:00:23.9153833
+11/23/2019 3:52:44 PM,Player2,silver chest,0,11/23/2019 3:53:01 PM,00:00:17.0434637
+11/23/2019 3:52:44 PM,Player2,gold chest,0,11/23/2019 3:53:08 PM,00:00:23.9153833
