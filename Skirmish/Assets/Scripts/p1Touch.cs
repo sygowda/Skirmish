@@ -31,7 +31,7 @@ public class p1Touch : MonoBehaviour
         {
             Touch thisTouch = Input.GetTouch(i);
             //Debug.Log("touch at position: " + Camera.main.ScreenToWorldPoint(thisTouch.position));
-            if (Camera.main.ScreenToWorldPoint(thisTouch.position).y > 0f)
+            if (Camera.main.ScreenToWorldPoint(thisTouch.position).y > 0f && Camera.main.ScreenToWorldPoint(thisTouch.position).y < 4f)
             {
                 p1_touch = thisTouch;
             }
