@@ -39,7 +39,7 @@ public class Chest : MonoBehaviour
             }
             if (collision.tag == "SpecialBulletTag")
             {
-                health -= 2;
+                health = 0;
             }
         }
         else
