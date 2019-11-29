@@ -13,11 +13,11 @@ EditorBuildSettings:
     guid: 8ae84ee0de6a52d4c9c74a24535f56f8
   - enabled: 1
     path: Assets/Scenes/P2Allot.unity
-    guid: c2b87baddcd7fc347afbf0befdd6d02d
+    guid: e4ffa740871c7144e8e7cdf77efde11b
   - enabled: 1
     path: Assets/Scenes/GameEngine.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Store.unity
+    path: Assets/Scenes/Tutorial.unity
     guid: 90b880d3dc6fe614ab6660779edbfb7d
   m_configObjects: {}

@@ -4,10 +4,16 @@ using UnityEngine;
 
 public class p2SpecialShot : MonoBehaviour
 {
-    private int p2numShots = 1;
+    private int p2numShots = UserData.getChest2(2);
     public Transform firePoint;
     public GameObject bulletPrefab;
 
+    // Start is called before the first frame update
+    void Start()
+    {
+        p2numShots = UserData.getChest2(2);
+
+    }
 
     public void ShootSpecial()
     {

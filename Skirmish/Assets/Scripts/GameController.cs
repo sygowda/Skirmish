@@ -35,6 +35,7 @@ public class GameController : MonoBehaviour
 
     void Start()
     {
+        StartCoroutine("gameStartCountdown");
         p1_total = UserData.getChest1(0) + UserData.getChest1(1);
         p2_total = UserData.getChest2(0) + UserData.getChest2(1);
         ChestAllocateAnalytics.initializeAllocationTrackerp1(UserData.getChest1(0), UserData.getChest1(1));
@@ -47,7 +48,6 @@ public class GameController : MonoBehaviour
         AnalyticsManager.initializeCoolDownTracker(0, 0);
         ChestDestroyAnalytics.initializep1ChestDestroyedTime();
         ChestDestroyAnalytics.initializep2ChestDestroyedTime();
-        StartCoroutine("gameStartCountdown");
         startTime = DateTime.Now;
     }
 

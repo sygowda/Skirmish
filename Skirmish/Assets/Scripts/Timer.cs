@@ -12,7 +12,7 @@ public class Timer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        remainingTime = 0;
+        remainingTime = 90;
         Time.timeScale = 1; //Make sure time passes at the same rate as real time
     }
 
@@ -39,7 +39,7 @@ public class Timer : MonoBehaviour
         while(true)
         {
             yield return new WaitForSeconds(1);
-            remainingTime++;
+            remainingTime--;
             AnalyticsManager.setTotalGameDuration(remainingTime);
         }
     }
