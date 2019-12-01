@@ -21,6 +21,8 @@ public class BrickRegen1 : MonoBehaviour
     private float brickHeight = 0.5f;
     private float brickWidth = 0.5f;
     private int poolSize;
+    public int regenRangeLower = 5;
+    public int regenRangeUpper = 7;
 
     // Start is called before the first frame update
     void Start()
@@ -60,7 +62,7 @@ public class BrickRegen1 : MonoBehaviour
         {
             if(bricks[i].activeSelf == false)
             {
-                if (respawnTimeList[i].rate < 20) respawnTimeList[i].rate = Random.Range(10, 50);
+                if (respawnTimeList[i].rate < regenRangeLower) respawnTimeList[i].rate = Random.Range(regenRangeLower, regenRangeUpper);
                 else
                 {
                     if (respawnTimeList[i].timeSinceLastSpawned >= respawnTimeList[i].rate)

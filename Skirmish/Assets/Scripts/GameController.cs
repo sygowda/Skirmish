@@ -21,6 +21,8 @@ public class GameController : MonoBehaviour
     public int p2_total;
     public bool hasAnalytics = false;
     public static DateTime startTime;
+    public Boolean gameOverWithSpecialBullet = false;
+
     void Awake()
     {
         if (instance == null)
@@ -105,18 +107,22 @@ public class GameController : MonoBehaviour
             hasAnalytics = true;
         }
 
-        int reward = p1_total;
+        if (gameOverWithSpecialBullet)
+        {
+            p1_total = 0;
+            p2_total = 0;
+        }
 
         if (player == PLAYER_1)
         {
-            player1Text.text = ("You WIN" + (p1_total - 100) + " coins!");
-            player2Text.text = ("You LOSE" + (100 - p2_total) + " coins!");
+            player1Text.text = ("You WIN " + Math.Abs(p1_total - 100) + " coins!");
+            player2Text.text = ("You LOSE " + Math.Abs(100 - p2_total) + " coins!");
             
         }
         else if (player == PLAYER_2)
         {
-            player2Text.text = ("You WIN" + (p2_total - 100) + " coins!");
-            player1Text.text = ("You LOSE" + (100 - p1_total) + " coins!");
+            player2Text.text = ("You WIN " + Math.Abs(p2_total - 100) + " coins!");
+            player1Text.text = ("You LOSE " + Math.Abs(100 - p1_total) + " coins!");
 
         }
         else

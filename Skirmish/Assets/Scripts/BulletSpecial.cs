@@ -30,6 +30,7 @@ public class BulletSpecial : MonoBehaviour
         }
         if (collision.gameObject.tag == "Player1Tag" || collision.gameObject.tag == "Player2Tag")
         {
+            GameController.instance.gameOverWithSpecialBullet = true;
             GameController.instance.GameOver(collision.gameObject.tag == "Player1Tag" ? 2 : 1);
         }
         if (collision.gameObject.tag != "BulletTag")

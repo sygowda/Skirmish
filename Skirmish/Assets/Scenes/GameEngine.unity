@@ -946,6 +946,7 @@ MonoBehaviour:
   p1_total: 0
   p2_total: 0
   hasAnalytics: 0
+  gameOverWithSpecialBullet: 0
 --- !u!114 &353117843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -975,8 +976,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   brickPrefab: {fileID: 8803138568082264122, guid: 37205c94add71dc4e9f342d4712b8c63,
     type: 3}
-  rowNum: 1
+  rowNum: 2
   colNum: 0
+  regenRangeUpper: 7
 --- !u!1 &465404878
 GameObject:
   m_ObjectHideFlags: 0
