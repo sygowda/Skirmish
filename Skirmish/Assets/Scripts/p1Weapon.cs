@@ -12,13 +12,20 @@ public class p1Weapon : MonoBehaviour
     public int max_shots = 10;
     public int cur_shots;
     public float cd_time = 2;
+    private int cnt = 0;
+    private int cd_cnt = 0;
+    public int max_cnt = 2;
+    public int max_cd_cnt = 100;
+
     Transform bulletBar;
     private float elapsedTimeSinceStart;
+    GameObject player1;
 
     private void Start()
     {
         bulletBar = transform.Find("BulletCountBar1");
         setBulletBarSize(1f);
+        player1 = GameObject.FindGameObjectWithTag("Player1Tag");
     }
 
 
@@ -26,35 +33,38 @@ public class p1Weapon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameController.instance.startGame == false)
+        if (cd_cnt >= 0)
         {
-            elapsedTimeSinceStart = Time.time;
+            cd_cnt--;
             return;
         }
-        GameObject player1 = GameObject.FindGameObjectWithTag("Player1Tag");
-        if ((Time.time - elapsedTimeSinceStart) > nextActionTime)
+        if (cnt >= 0)
         {
-            player1.GetComponent<Renderer>().material.color = new Color(1f, 1f, 1f);
-            //Debug.Log("P1 y position: " + Camera.main.ScreenToWorldPoint(p1Touch.p1_touch.position).y);
-            if (p1Touch.p1_touch.phase != TouchPhase.Ended && Camera.main.ScreenToWorldPoint(p1Touch.p1_touch.position).y > 2.5f)
+            cnt--;
+            return;
+        }
+        player1.GetComponent<Renderer>().material.color = new Color(1f, 1f, 1f);
+        if (p1Touch.p1_touch.phase != TouchPhase.Ended && Camera.main.ScreenToWorldPoint(p1Touch.p1_touch.position).y > 2.5f)
+        {
+
+            if (cur_shots == 0)
             {
-                if (cur_shots == 0)
-                {
-                    cur_shots = max_shots;
-                }
-                setBulletBarSize((float)cur_shots / max_shots);
-                Shoot();
-                nextActionTime += period;
-                cur_shots--;
-                if (cur_shots == 0)
-                {
-                    AnalyticsManager.increaseCoolDownCount(0);
-                    nextActionTime += cd_time;
-                    player1.GetComponent<Renderer>().material.color = new Color(0.5f, 0.5f, 0.5f);
-                    setBulletBarSize(0f);
-                }
+                cur_shots = max_shots;
+
+            }
+            setBulletBarSize((float)cur_shots / max_shots);
+            Shoot();
+            cnt = max_cnt;
+            cur_shots--;
+            if (cur_shots == 0)
+            {
+                cd_cnt = max_cd_cnt;
+                AnalyticsManager.increaseCoolDownCount(0);
+                player1.GetComponent<Renderer>().material.color = new Color(0.5f, 0.5f, 0.5f);
+                setBulletBarSize(0f);
             }
         }
+
     }
 
     void Shoot()

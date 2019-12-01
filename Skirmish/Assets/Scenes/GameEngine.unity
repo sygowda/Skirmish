@@ -937,8 +937,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   drawText: {fileID: 39641957}
-  player1Text: {fileID: 753879940}
-  player2Text: {fileID: 13822680}
+  player1Text: {fileID: 13822680}
+  player2Text: {fileID: 753879940}
   gameOver: 0
   endMenu: {fileID: 663582260}
   startCountDown: {fileID: 1473184507}
@@ -978,7 +978,8 @@ MonoBehaviour:
     type: 3}
   rowNum: 2
   colNum: 0
-  regenRangeUpper: 7
+  regenRangeLower: 5
+  regenRangeUpper: 10
 --- !u!1 &465404878
 GameObject:
   m_ObjectHideFlags: 0
@@ -2698,6 +2699,8 @@ MonoBehaviour:
   max_shots: 30
   cur_shots: 0
   cd_time: 2
+  max_cnt: 2
+  max_cd_cnt: 50
 --- !u!114 &1400775345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4199,6 +4202,8 @@ MonoBehaviour:
   max_shots: 30
   cur_shots: 0
   cd_time: 2
+  max_cnt: 2
+  max_cd_cnt: 50
 --- !u!61 &1814922628
 BoxCollider2D:
   m_ObjectHideFlags: 0
