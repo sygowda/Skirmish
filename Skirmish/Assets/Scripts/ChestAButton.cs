@@ -27,7 +27,7 @@ public class ChestAButton : MonoBehaviour
     public void addCoin()
     {
         int cash = parseCoins(pocket.text);
-        if (cash >= 10)
+        if (cash >= 10 && (int.Parse(topChest.text) + int.Parse(bottomChest.text) < 100))
         {
             cash -= 10;
             pocket.text = "Coins: " + cash.ToString();
