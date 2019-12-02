@@ -18,6 +18,7 @@ public class Weapon : MonoBehaviour
     public int max_cnt = 2;
     public int max_cd_cnt = 100;
     GameObject player2;
+    private bool cooling = false;
 
     private void Start()
     {
@@ -36,20 +37,24 @@ public class Weapon : MonoBehaviour
             cd_cnt--;
             return;
         }
+        else
+        {
+            cooling = false;
+        }
         if (cnt >= 0)
         {
             cnt--;
             return;
         }
         player2.GetComponent<Renderer>().material.color = new Color(1f, 1f, 1f);
+        if (cooling == false && cur_shots == 0)
+        {
+            cur_shots = max_shots;
+            setBulletBarSize((float)cur_shots / max_shots);
+
+        }
         if (p2Touch.p2_touch.phase != TouchPhase.Ended && Camera.main.ScreenToWorldPoint(p2Touch.p2_touch.position).y < 2.5f)
         {
-
-            if (cur_shots == 0)
-            {
-                cur_shots = max_shots;
-
-            }
             setBulletBarSize((float)cur_shots / max_shots);
             Shoot();
             cnt = max_cnt;
@@ -60,6 +65,7 @@ public class Weapon : MonoBehaviour
                 AnalyticsManager.increaseCoolDownCount(0);
                 player2.GetComponent<Renderer>().material.color = new Color(0.5f, 0.5f, 0.5f);
                 setBulletBarSize(0f);
+                cooling = true;
             }
         }
     }
