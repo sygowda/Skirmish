@@ -50,6 +50,10 @@ public class p1Weapon : MonoBehaviour
         }
         
         player1.GetComponent<Renderer>().material.color = new Color(1f, 1f, 1f);
+        if (cooling == true)
+        {
+            player1.GetComponent<Renderer>().material.color = new Color(0.5f, 0.5f, 0.5f);
+        }
         if (cooling == false && cur_shots == 0)
         {
             cur_shots = max_shots;

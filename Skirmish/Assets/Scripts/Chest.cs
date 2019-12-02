@@ -50,7 +50,7 @@ public class Chest : MonoBehaviour
 
                 gc.p1_total -= UserData.getChest1(index);
                 gc.p2_total += UserData.getChest1(index);
-                ChestDestroyAnalytics.setP1ChestDestroyedTime(index);
+                //ChestDestroyAnalytics.setP1ChestDestroyedTime(index);
             }
             else
             {
@@ -58,7 +58,7 @@ public class Chest : MonoBehaviour
 
                 gc.p1_total += UserData.getChest2(index);
                 gc.p2_total -= UserData.getChest2(index);
-                ChestDestroyAnalytics.setP2ChestDestroyedTime(index);
+                //ChestDestroyAnalytics.setP2ChestDestroyedTime(index);
             }
             Destroy(gameObject);
         }

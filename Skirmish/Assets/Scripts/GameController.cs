@@ -40,16 +40,16 @@ public class GameController : MonoBehaviour
         StartCoroutine("gameStartCountdown");
         p1_total = UserData.getChest1(0) + UserData.getChest1(1);
         p2_total = UserData.getChest2(0) + UserData.getChest2(1);
-        ChestAllocateAnalytics.initializeAllocationTrackerp1(UserData.getChest1(0), UserData.getChest1(1));
-        ChestAllocateAnalytics.initializeAllocationTrackerp2(UserData.getChest2(0), UserData.getChest2(1));
-        ChestAllocateAnalytics.saveChestData();
+        //ChestAllocateAnalytics.initializeAllocationTrackerp1(UserData.getChest1(0), UserData.getChest1(1));
+        //ChestAllocateAnalytics.initializeAllocationTrackerp2(UserData.getChest2(0), UserData.getChest2(1));
+        //ChestAllocateAnalytics.saveChestData();
         Debug.Log(UserData.getChest1(0));
         Debug.Log(UserData.getChest1(1));
         Debug.Log(UserData.getChest2(0));
         Debug.Log(UserData.getChest2(1));
-        AnalyticsManager.initializeCoolDownTracker(0, 0);
-        ChestDestroyAnalytics.initializep1ChestDestroyedTime();
-        ChestDestroyAnalytics.initializep2ChestDestroyedTime();
+        //AnalyticsManager.initializeCoolDownTracker(0, 0);
+        //ChestDestroyAnalytics.initializep1ChestDestroyedTime();
+        //ChestDestroyAnalytics.initializep2ChestDestroyedTime();
         startTime = DateTime.Now;
     }
 
@@ -100,12 +100,14 @@ public class GameController : MonoBehaviour
         }
 
         gameOver = true;
+        /*
         if (!hasAnalytics)
         {
             AnalyticsManager.saveAnalyticsData();
             ChestDestroyAnalytics.saveChestTimer();
             hasAnalytics = true;
         }
+         * */
 
         if (gameOverWithSpecialBullet)
         {
@@ -147,12 +149,14 @@ public class GameController : MonoBehaviour
         }
 
         gameOver = true;
+        /*
         if (!hasAnalytics)
         {
             AnalyticsManager.saveAnalyticsData();
             ChestDestroyAnalytics.saveChestTimer();
             hasAnalytics = true;
         }
+         * */
 
         if (p1_total == p2_total)
         {
